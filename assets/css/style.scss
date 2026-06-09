@@ -1,1 +1,27 @@
+---
+---
 
+// 1. Configurazione della nuova Palette Colori (Rosa e Giallo)
+$header-bg-color: #d11a5b;           // Rosa intenso / Fucsia (Inizio sfumatura in alto)
+$header-bg-color-secondary: #f1c40f; // Giallo acceso / Dorato (Fine sfumatura in basso)
+$section-headings-color: #d11a5b;    // Titoli delle sezioni colorati di Rosa
+$brand-color: #d11a5b;               // Link nel testo colorati di Rosa (per risaltare sul bianco)
+
+// 2. Testo dell'intestazione (Bianco, ottimo per contrastare il rosa/giallo)
+$header-heading-color: #ffffff; 
+$header-text-color: #ffffff;
+
+// 3. Importazione del layout ufficiale di Cayman
+@import "{{ site.theme }}";
+
+// 4. Personalizzazione dei grandi bottoni in cima per renderli armoniosi
+.btn {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.15) !important; // Sfondo leggermente bianco trasparente
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important; // Si schiarisce al passaggio del mouse
+    color: #ffffff !important;
+  }
+}
