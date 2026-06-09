@@ -10,7 +10,7 @@ title: 🔍 SPARQL Queries
 ---
 
 This section hosts the queries used to evaluate the digital footprint of the **Basilica of San Petronio** (Bologna) within the **ArCo knowledge graph**, mapping out the data gaps identified during our research.
-
+ 
 ## 🛠️ Query Keywords
 
 | Phase | Keyword / Operator | Functional Action on Data |
