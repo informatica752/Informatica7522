@@ -154,6 +154,6 @@ WHERE {
   <img width="1896" height="227" alt="sparql san francesco " src="https://github.com/user-attachments/assets/e6f12147-6ef2-4d7e-96ca-62c0e95e5cf5" />
 
  By comparison, the documentation was significantly more detailed than the data available for the Basilica of San Petronio. 
- [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560)
+ [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560) 
 
 
