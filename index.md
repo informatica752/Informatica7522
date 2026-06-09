@@ -3,7 +3,7 @@ layout: default
 title: 🏠 Home
 ---
 
-# 🏠 Home Page
+# Basilica di San Petronio 
 
 Benvenuti nel progetto. Utilizza il menu sottostante per esplorare le diverse sezioni della ricerca:
 
