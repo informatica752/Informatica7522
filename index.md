@@ -1,6 +1,7 @@
 ---
 layout: default
 title: **Basilica di San Petronio** 
+---
 Comparison of the Basilica of San Petronio and the Basilica of San Francesco
 
 
