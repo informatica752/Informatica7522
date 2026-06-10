@@ -9,13 +9,13 @@ description: "Comparison of the Basilica of San Petronio and the Basilica of San
 
 
 
-### 🌐 Navigazione del Progetto
+### Explore the Project
 * **[🏠 Home](index.html)**
 * **[📂 Topic](topic.html)**
 * **[⚙️ Methodology](methodology.html)**
 * **[🔍 SPARQL Queries](sparql.html)**
-* **[🤖 LLM Prompts](prompts.html)**
-* **[💎 RDF Triples](rdf.html)**
+* **[💻 LLM Prompts](prompts.html)**
+* **[🔗 RDF Triples](rdf.html)**
 * **[🏁 Conclusion](conclusion.html)**
 
 
@@ -40,18 +40,17 @@ Ultimately, this work investigates how AI-driven assistants can optimize the rep
 ## Tools Used
 
 * **[ArCo Ontology](http://wit.istc.cnr.it/arco/lode/extract?lang=en&url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/arco/arco.owl)& [SPARQL Endpoint](https://en.wikipedia.org/wiki/SPARQL)** with **[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)** (Data retrieval & modeling)
-* **[ChatGPT](https://chat.openai.com/), [Gemini](https://gemini.google.com/?hl=it)** (LLM testing & triple generation) & [Claude](https://claude.com/)
+* **[ChatGPT](https://chat.openai.com/), [Gemini](https://gemini.google.com/?hl=it)** (LLM testing & triple generation) & **[Claude](https://claude.com/)**
 * **[GitHub](https://github.com/)** (Project hosting & version control)
 
 ## Our Team
 
 This project was collaboratively developed by:
 
-* 👩🏻 **Sofia Giorgetti**
+* 👱🏼‍♀️ **Sofia Giorgetti**
 * 👩🏻 **Francesca Cianciosi**
 * 👩🏻 **Giulia Nestola**
 * 👩🏻 **Martina Fierli**
 
 * Students of the Master’s Degree in [Language, Society and Communication](https://corsi.unibo.it/2cycle/LanguageSocietyCommunication) at the University of Bologna.
 
-```
