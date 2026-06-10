@@ -15,7 +15,7 @@ This section hosts the queries used to evaluate the digital footprint of the **B
 | :---: | :--- | :--- |
 | **01** | `DISTINCT` | **Cleans** ➔ Removes all duplicate rows from the final graph output. |
 | **02** | `SELECT` | **Specifies** ➔ the projection, i.e., the number and the order of the data to retrieve 
-| **03** | `WHERE` | **Constraints** ➔ imposes constraints on the solution by means of graph patterns and/or boolean operations 
+| **03** | `WHERE` | **Constraints** ➔ imposes restrictions on the solution by means of graph patterns and/or boolean operations 
 | **04** | `FILTER`    | **Restricts** ➔ Enforces explicit logical constraints, keeping only the resources that satisfy our search conditions. |
 | **05** | `REGEX`     | **Matches** ➔ Evaluates text strings using advanced pattern-matching, allowing for case-insensitive and flexible keyword searches. |
 | **06** | `OPTIONAL` | **Adapts** ➔ Fetches extra details safely, ignoring missing values. |
@@ -151,8 +151,7 @@ WHERE {
 * **Why we do this:** If we only searched for "San Francesco", the database would return hundreds of unrelated churches across Italy. By adding the second condition for "arezzo", we instantly filter out all other results and find the exact monument we need.
 
   <img width="1896" height="227" alt="sparql san francesco " src="https://github.com/user-attachments/assets/e6f12147-6ef2-4d7e-96ca-62c0e95e5cf5" />
-
- By comparison, the documentation was significantly more detailed than the data available for the Basilica of San Petronio. 
+By comparison, the documentation was significantly more detailed than the data available for the Basilica of San Petronio. 
  [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560) 
 
 
