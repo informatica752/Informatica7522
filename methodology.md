@@ -54,12 +54,22 @@ Instead of organizing data in traditional relational tables or isolated text blo
 By adopting this structure, we shift from a "Web of Documents" (meant only for human eyes) to a "Web of Data" (where machines can logically infer connections between concepts).
 
 ---
-
 ## 🤖 Computational Processing: LLMs & AI Ingestion
-To accelerate the creation of the missing triples for San Petronio without manually coding thousands of lines, we introduced **LLMs (Large Language Models)** into the data pipeline.
 
-### Role of LLMs in Semantic Web
-LLMs act as intelligent translation layers. When properly instructed, they can parse complex natural language narratives (such as historical books or architectural surveys) and isolate core semantic entities and relationships.
+### What is an LLM?
+
+An **LLM (Large Language Model)** is a type of neural network trained to understand and generate human language. It can understand, process, and generate human language, making it capable of reading documents, answering questions, and translating text into computer code or structured data.
+
+---
+
+### Our AI Workflow
+
+To speed up our project and avoid writing thousands of lines of code manually, we included LLMs in our workflow. We used Artificial Intelligence for two main purposes:
+
+1. **Finding Missing Information:** The AI helped us scan and analyze historical books, architectural surveys, and documents to quickly find the data that was missing for San Petronio.
+2. **Creating Semantic Web Data:** Once the information was found, the AI acted as an intelligent translator. It extracted the key entities from the historical texts and automatically converted them into RDF triples.
+
+The LLM allowed us to bridge the gap between human narratives (stories and history) and machine-readable data (the Semantic Web) in a fraction of the time.A Large Language Model (LLM) is a type of neural network trained to understand and generate human language 
 
 ### Models Selected for this Research
 To guarantee high syntactical accuracy and lower hallucination rates, we benchmarked and deployed the following state-of-the-art models:
