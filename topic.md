@@ -14,16 +14,22 @@ Begun in [1390](https://it.wikipedia.org/wiki/1390) under the direction of [Anto
 
 ## 🎯 Why We Chose This Project
 
-Our research topic is born out of a shared academic journey and a surprising discovery. As students in Bologna, the Basilica di San Petronio is a daily presence in our academic and personal lives. However, our group brings a dual regional perspective: while studying in [Emilia-Romagna](https://it.wikipedia.org/wiki/Emilia-Romagna), **three of our team members come from [Tuscany](https://it.wikipedia.org/wiki/Toscana)**.
+This project came about through a mix of daily life, academic curiosity, and an unexpected discovery. 
 
-This specific cross-regional background naturally led us to compare the monuments of our respective regions. In Tuscany, prominent medieval monuments—most notably the **[Basilica di San Francesco](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))**—benefit from incredibly rich digital documentation. We initially assumed that a monument of San Petronio's caliber would have a similarly robust representation in national cultural frameworks.
+As students in Bologna, the **Basilica di San Petronio** is a massive presence in our daily lives. When we first started our research, we wanted to see how this landmark was represented in digital databases, so we began comparing its data with other famous Italian basilicas in general. 
 
-### The Element of Surprise on ArCo
-Our project truly began when we queried **[ArCo](https://dati.beniculturali.it/arco/index.php)**, the official knowledge graph of the Italian Ministry of Culture. To our genuine astonishment, we found a staggering data asymmetry:
-* **The San Francesco Benchmark:** The Basilica di San Francesco features a deeply nested, dense network of Linked Open Data, meticulously mapping its architectural history, internal chapels, artistic commissions, and structural evolutions over the centuries.
-* **The San Petronio Blank Slate:** Despite its massive physical and historical weight, San Petronio exists on ArCo almost entirely as an "empty shell." It contains basic registry stubs but completely lacks detailed metadata, semantic properties, and granular historical connections.
+While looking at the results, we noticed some gaps. That is when we had an idea based on our team's background: although we all study here in Emilia-Romagna, three of us are originally from **Tuscany**. We thought it would be interesting to compare San Petronio directly with a major landmark from our home region to see how they measured up. We chose the **Basilica di San Francesco** as our benchmark.
 
-This deep semantic gap motivated us to take action. This project is our attempt to use modern Semantic Web technologies and AI to give the Basilica di San Petronio the digital depth it deserves.
+We naturally assumed that a monument of San Petronio’s immense physical and historical importance would have the same level of rich, detailed data as the prominent Tuscan churches. However, we found a completely different story.
+
+### 😮 The Surprise on ArCo
+
+When we ran our queries on **ArCo**, we were genuinely surprised by the striking difference between the two monuments:
+
+* **The San Francesco Benchmark:** The Basilica di San Francesco is exceptionally well-mapped. It features a dense network of connected data covering its architectural history, internal chapels, artwork, and structural evolution over the centuries.
+* **The San Petronio "Empty Shell":** Despite its historical weight, San Petronio exists on ArCo almost entirely as a basic registry entry. It contains standard identification info but completely lacks granular historical data, coordinates, images, or semantic connections.
+
+Seeing this massive data gap is what motivated us to take action. This project is our attempt to use AI and Semantic Web tools to bridge this digital divide and finally give the Basilica di San Petronio the structured digital depth it deserves.
 
 ---
 
@@ -35,8 +41,9 @@ To visually contextualize the scale of this data disparity, the table below high
 | :--- | :--- | :---: | :---: | :---: |
 | **San Francesco** | Tuscany | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) | ArCo, FOAF, CIDOC-CRM |
 | **San Petronio** | Emilia-Romagna | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) | Minimal / Basic ArCo |
+---
 
 By leveraging the deep relational structure of the Basilica di San Francesco as our structural blueprint, our methodology aims to extract, model, and inject the missing historical and architectural knowledge into a newly engineered, independent Knowledge Graph dedicated to San Petronio.
----
+
 
 ### 🏠 [Torna alla Homepage](index.html)
