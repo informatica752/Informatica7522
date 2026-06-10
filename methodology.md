@@ -33,7 +33,7 @@ To share our work with everyone, we built this **[GitHub Pages web platform](htt
 ## **What Role Do These Tools Play?**
 
 
-## 🏛️ Cultural Knowledge Sources: ArCo & SPARQL Endpoints
+## 🏛️ Cultural Knowledge Sources: ArCo & ArCo SPARQL Endpoint
 To establish a baseline for our project, we interacted extensively with national cultural heritage platforms:
 
 * **What is ArCo?** [ArCo](https://dati.beniculturali.it/arco/index.php) (Architecture of Knowledge) is the official [Knowledge Graph](https://it.wikipedia.org/wiki/Knowledge_graph) of the [Italian Ministry of Culture](https://it.wikipedia.org/wiki/Ministero_della_cultura). It exposes millions of cultural assets as [Linked Open Data (LOD)](https://en.wikipedia.org/wiki/Linked_data), standardizing information about monuments, historical events, and artistic creators across Italy.
