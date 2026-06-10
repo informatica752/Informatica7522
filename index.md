@@ -51,5 +51,5 @@ This project was collaboratively developed by:
 * 👩🏻 **Giulia Nestola**
 * 👩🏻 **Martina Fierli**
 
-* Students of the Master’s Degree in [Language, Society and Communication](https://corsi.unibo.it/2cycle/LanguageSocietyCommunication) at the University of Bologna.
+Students of the Master’s Degree in [Language, Society and Communication](https://corsi.unibo.it/2cycle/LanguageSocietyCommunication) at the University of Bologna.
 
