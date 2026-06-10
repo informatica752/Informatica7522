@@ -14,12 +14,14 @@ This section hosts the queries used to evaluate the digital footprint of the **B
 | Phase | Keyword / Operator | Functional Action on Data |
 | :---: | :--- | :--- |
 | **01** | `DISTINCT` | **Cleans** ➔ Removes all duplicate rows from the final graph output. |
-| **02** | `FILTER`    | **Restricts** ➔ Enforces explicit logical constraints, keeping only the resources that satisfy our search conditions. |
-| **03** | `REGEX`     | **Matches** ➔ Evaluates text strings using advanced pattern-matching, allowing for case-insensitive and flexible keyword searches. |
-| **04** | `OPTIONAL` | **Adapts** ➔ Fetches extra details safely, ignoring missing values. |
-| **05** | `UNION`    | **Combines** ➔ Merges multiple alternative search paths together. |
-| **06** | `ORDER BY` | **Organizes** ➔ Sorts the final results into a clean alphanumeric order. |
-| **07** | `LIMIT`    | **Limits** ➔ Caps the output entries to keep the web page fast. |
+| **02** | `SELECT` | **Specifies** ➔ the projection, i.e., the number and the order of the data to retrieve 
+| **03** | `WHERE` | **Imposes** ➔ constraints on the solution by means of graph patterns and/or boolean operations 
+| **04** | `FILTER`    | **Restricts** ➔ Enforces explicit logical constraints, keeping only the resources that satisfy our search conditions. |
+| **05** | `REGEX`     | **Matches** ➔ Evaluates text strings using advanced pattern-matching, allowing for case-insensitive and flexible keyword searches. |
+| **06** | `OPTIONAL` | **Adapts** ➔ Fetches extra details safely, ignoring missing values. |
+| **07** | `UNION`    | **Combines** ➔ Merges multiple alternative search paths together. |
+| **08** | `ORDER BY` | **Organizes** ➔ Sorts the final results into a clean alphanumeric order. |
+| **09** | `LIMIT`    | **Limits** ➔ Caps the output entries to keep the web page fast. |
 
 
 ## 🔎 Step 1: Mapping the Baseline – Graph Discovery
