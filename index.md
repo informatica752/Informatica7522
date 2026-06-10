@@ -7,17 +7,6 @@ title: "Basilica di San Petronio"
 
 <img width="1200" height="675" alt="Basilica-di-San-Petronio-1" src="https://github.com/user-attachments/assets/b3bea0e0-26aa-4bac-b197-509f297a8de7" />
 
-
-### Explore the Project
-* **[🏠 Home](index.html)**
-* **[📂 Topic](topic.html)**
-* **[⚙️ Methodology](methodology.html)**
-* **[🔍 SPARQL Queries](sparql.html)**
-* **[💻 LLM Prompts](prompts.html)**
-* **[🔗 RDF Triples](rdf.html)**
-* **[🏁 Conclusion](conclusion.html)**
-
-
 # About the Project
 
 This project was carried out as part of the **KE4H (Knowledge Engineering for the Humanities)** course at the [University of Bologna](https://www.unibo.it/it). 
