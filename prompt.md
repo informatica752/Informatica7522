@@ -1,5 +1,3 @@
-#### 🤖 Contenuto di `prompts.md`
-```markdown
 ---
 layout: default
 title: 🤖 LLM Prompts
