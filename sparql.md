@@ -131,18 +131,21 @@ Specifically, we selected the **Basilica of San Francesco in Arezzo** as our qua
 To retrieve the official data record for the Basilica of San Francesco, we executed the following SPARQL query:
 
 ```sparql
-PREFIX cis: [http://dati.beniculturali.it/cis/](http://dati.beniculturali.it/cis/)
-PREFIX rdfs: [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#)
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?site ?label
 WHERE {
   ?site a cis:CulturalInstituteOrSite ;
         rdfs:label ?label .
-  FILTER(
-    REGEX(LCASE(STR(?label)), "san francesco") &&
-    REGEX(LCASE(STR(?label)), "arezzo")
+  
+  # Filtri concatenati e ottimizzati senza LCASE
+  FILTER (
+    regex(str(?label), "san francesco", "i") &&
+    regex(str(?label), "arezzo", "i")
   )
 }
+LIMIT 100
 ```
 ### Query Breakdown: How It Works
 **`FILTER` (`REGEX`(...) `&&` `REGEX`(...))**
