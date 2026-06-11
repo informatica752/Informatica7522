@@ -61,6 +61,8 @@ Let's break this query down into simple pieces:
   * It turns the data into normal text.
   * It converts all letters to lowercase.
   * It looks for the words "san petronio".
+  * `STR` Function: Converts a resource value into a plain text string.
+     Why it's used: It removes language tags (like @it or @en) so that the text can be correctly read by the `REGEX` filter.
 * **Why we do this:** The `i` flag stands for "case-Insensitive". When passed as a parameter inside the `REGEX` function, it instructs the query engine as following: "Search for this specific word inside the text, and completely ignore whether it is written in uppercase, lowercase, or a mix of both." It finds the basilica even if it was written with different capital letters (like "San Petronio", "san petronio", or "SAN PETRONIO").
 
 <img width="1915" height="562" alt="sparql basilica petronio " src="https://github.com/user-attachments/assets/2b27ea6e-a4e4-4571-bb16-266e23e16190" />
