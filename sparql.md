@@ -170,13 +170,13 @@ By comparison, the documentation was significantly more detailed than the data a
 ## Step 4: Comparing results: gaps identified
 By comparing the results of Query 2 and Query 3 with the first Query, we outlined (numero) gaps that should be added to enrich Basilica di San Petronio:
 
-📝 Description
-🔗 Wikidata link
-📍 Geographical coordinates 
-📷 Official image
-🎟️ Entrance ticket
-⛔ Access Conditions
-📞 Contact 
+** 1.📝 Description
+** 2.🔗 Wikidata link
+** 3.📍 Geographical coordinates 
+** 4.📷 Official image
+** 5.🎟️ Entrance ticket
+** 6.⛔ Access Conditions
+** 7.📞 Contact 
 
 ## Step 5: Queries to double-check these gaps ArCo
 In order to ensure the absence of such information on ArCo, we run some queries. 
