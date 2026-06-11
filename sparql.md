@@ -179,7 +179,7 @@ By comparing the results of Query 2 and Query 3 with the first Query, we outline
 * 7.📞 Contact 
 
 ## Step 5: Queries to double-check these gaps ArCo
-In order to ensure the absence of such information on ArCo, we run some queries. 
+In order to ensure the absence of such information on ArCo, we run some queries, using the previously found IRI of Basilica di San Petronio: http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio
 
 ### Query 1: Verifying the absence of a description📝
 Firslty, we executed a query to verify whether a formal textual description or historical overview of the Basilica di San Petronio exists within the knowledge graph:
@@ -192,14 +192,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?property ?descriptionText ?descriptionLabel
 WHERE {
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio>
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
       l0:description ?descriptionText .
     BIND("l0:description" AS ?property)
     BIND("" AS ?descriptionLabel)
   }
   UNION
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio>
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
       arco:hasDescription ?descResource .
     BIND("arco:hasDescription" AS ?property)
     ?descResource l0:description ?descriptionText .
@@ -211,20 +211,18 @@ LIMIT 10
 ```
 
 📝 Analysing the query:
+* Subject Target: The query isolates the unique URI assigned by ArCo to the Basilica (...`/basilica-di-san-petronio`) as the main subject of our search.
+
 To prevent false negatives, the query scans different vocabularies simultaneously:
-
-
-* The use of `UNION` ensures that if any (or all) of these properties exist within the graph, the server returns the literal text bound to a single unified variable (`?description`), maximizing performance and avoiding database timeouts
-he query systematically audits the graph for textual metadata related to the Basilica using two distinct semantic pathways:
-
 * Direct Attachment (`l0:description`): checks if a text block is directly attached to the main monument resource using the national OntoPiA base vocabulary.
 * Indirect Modeling (`arco:hasDescription`): analyses graph to see if the text is encapsulated within a complex, intermediate description resource (`?descResource`). If found, it extracts both its inner `l0:description` text and any metadata tag through an `OPTIONAL { ?descResource rdfs:label ... }` clause.
 
 * The variable Binding (`BIND`) dynamically generates tracking flags (`?property` and `?descriptionLabel`) to explicitly identify which pattern successfully retrieved the data.
+* The use of `UNION` ensures that if any (or all) of these properties exist within the graph, the server returns the literal text bound to a single unified variable (`?description`), maximizing performance and avoiding database timeouts.
 
 📊 Results:
 ❌ Empty Table
-It confirms the absence of any description 
+It confirms the absence of any description.
 
 ### Query 2: Verifying the absence of the wikidata link🔗
 We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the Basilica di San Petronio:
@@ -235,7 +233,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT DISTINCT ?p ?o
 WHERE {
-  <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> ?p ?o .
+  <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> ?p ?o .
   FILTER (STRSTARTS(STR(?o), "https://www.wikidata.org/entity/") || STRSTARTS(STR(?o), "https://www.wikidata.org/wiki/"))
 }
 ```
@@ -258,7 +256,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?lat ?long
 WHERE {
-  <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+  <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
       geo:lat ?lat ;
       geo:long ?long .
 }
@@ -283,17 +281,17 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT DISTINCT ?image
 WHERE {
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
         foaf:depiction ?image .
   }
   UNION
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
         arco:image ?image .
   }
   UNION
   {
-    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+    <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
         arco:hasDigitalRepresentation ?image .
   }
 }
