@@ -170,21 +170,44 @@ By comparison, the documentation was significantly more detailed than the data a
 ## Step 4: Comparing results: gaps identified
 By comparing the results of Query 2 and Query 3 with the first Query, we outlined (numero) gaps that should be added to enrich Basilica di San Petronio:
 
-**1.📝 Description
-**2.🔗 Wikidata link
-**3.📍 Geographical coordinates 
-**4.📷 Official image
-**5.🎟️ Entrance ticket
-**6.⛔ Access Conditions
-**7.📞 Contact 
+* 1.📝 Description
+* 2.🔗 Wikidata link
+* 3.📍 Geographical coordinates 
+* 4.📷 Official image
+* 5.🎟️ Entrance ticket
+* 6.⛔ Access Conditions
+* 7.📞 Contact 
 
 ## Step 5: Queries to double-check these gaps ArCo
 In order to ensure the absence of such information on ArCo, we run some queries. 
 
-### Query 1:
+### Query 1: Verifying the absence of a description📝
 
+```sparql
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-### Query 2: Verifying the absence of the wikidata link
+SELECT DISTINCT ?description
+WHERE {
+  {
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+        arco:description ?description .
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+        rdfs:comment ?description .
+  }
+  UNION
+  {
+    <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+        dc:description ?description .
+  }
+}
+LIMIT 5
+```
+### Query 2: Verifying the absence of the wikidata link🔗
 We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the Basilica di San Petronio.
 🔍 Query:
 
@@ -208,7 +231,31 @@ WHERE {
 
 Despite being one of Italy's major heritage sites, the Basilica di San Petronio exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
 
-### Query 4: Verifying the absence of an official depiction
+### Query 3: Verifying the absence of geographical coordinates (latitude and longitude)📍
+We executed a query to verify whether ArCo explicitly integrates geospatial positioning data within the semantic profile of the Basilica di San Petronio (such data are present for example in the profile of Basilica di San Francesco).
+
+```sparql
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?lat ?long
+WHERE {
+  <http://dati.beniculturali.it/cis/CulturalInstituteOrSite/basilica-di-san-petronio> 
+      geo:lat ?lat ;
+      geo:long ?long .
+}
+LIMIT 5
+```
+📝 Analysing the query:
+* `clvapit:hasGeometry`: In structured cultural heritage graphs, coordinates are rarely attached directly to the monument. Instead, this predicate links the Basilica to an intermediate spatial node (`?geometry`).
+* The query then looks inside this specific geometry blank node to extract the standard `geo:lat` and `geo:long` literals
+
+📊 Results:
+❌ Empty Table
+
+This confirms that ArCo lacks both the direct coordinate triples and the formal `clvapit:Geometry` instances for the Basilica di San Petronio.
+
+### Query 4: Verifying the absence of an official depiction📷
 We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the Basilica di San Petronio in Bologna.
 
 ```sparql
@@ -248,3 +295,9 @@ To maximize the efficiency of this check, the query implements a `UNION` pattern
 ❌ Empty Table
 
 The official national graph lacks any direct link to an official image of the Basilica. 
+
+### Query 5: Verifying the absence of information about an entrance ticket 🎟️
+
+### Query 6: Verifying the absence of information about access conditions⛔
+
+### Query 7: Verifying the absence of contact details📞
