@@ -168,7 +168,7 @@ By comparison, the documentation was significantly more detailed than the data a
  [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560) 
 
 ## Step 4: Comparing results: gaps identified
-By comparing the results of Query 2 and Query 3 with the first Query, we outlined (numero) gaps that should be added to enrich Basilica di San Petronio:
+By comparing the results of Query 2 and Query 3 with the first Query, we outlined six main gaps that should be added to enrich Basilica di San Petronio:
 
 * 1.📝 Description
 * 2.🔗 Wikidata link
