@@ -46,40 +46,42 @@ The table below summarizes the exact prompting strategy used for each missing da
 
 > ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
 
+## 🏛️ 1. Basilica Description 
 
-
-## 🏛️ 1. Basilica Description
-
-Describing a historic place like this can be tricky. Some AIs give generic answers, while others use words that are too technical. To test how well they could explain the history and art of the Basilica on their own, we used a **Zero-Shot prompt**. We simply asked the models to describe the monument without giving them any extra tips or examples, allowing us to see how well they perform naturally.
+Providing a description that fits highly specialized academic standards can be difficult for an AI. To test if the models could replicate a sophisticated, institutional tone, we used a **Few-Shot prompt**. We provided them with an official, high-level example from the ArCo (Architecture of Knowledge) portal and asked them to write a description of the Basilica matching that exact academic style, vocabulary, and flow.
 
 ### Prompt Used 
 
-Please provide a description of the Basilica of San Petronio in Bologna, Italy. 
+Please provide a description of the Basilica of San Petronio in Bologna, Italy, matching the style of the following example found on ArCo: 
+"The Gothic basilica of San Francesco, rich in frescoed testimonies of fourteenth-century Aretine painting, welcomes one of the greatest masterpieces of the Renaissance, the 'Legend of the True Cross' by Piero della Francesca, the extraordinary cycle painted by the artist between around 1452 and 1455 in the Bacci Chapel. The luminous stories of Piero della Francesca, restored to their splendor in 2000 after a long restoration process, represent an essential destination for anyone who considers Renaissance civilization one of the greatest achievements of the human spirit. The new lighting, created thanks to the Light is Back project by iGuzzini, enhances Piero della Francesca's 'painting of light', all its crystalline legibility, forms, space, and color. The cycle illustrates some of the stories from the 13th-century 'Golden Legend' by Jacopo da Varagine, an iconographic source on which many depictions by Tuscan and Italian artists from the fourteenth century onwards are based. Scene after scene, it narrates the history of the wood of Christ's Cross, from the seed of the tree placed in the mouth of the dying Adam to the recapture of the Cross from the hands of Chosroes by Emperor Heraclius and his final entry into Jerusalem. Set against landscapes dear to the artist and painted architecture—Arezzo itself perched on the hill and Sansepolcro with its buildings in perspective—elegant and geometrically perfect figures accompany the observer through the narrative and history. In the basilica, particular emphasis is given not only to the stained glass windows by Guglielmo de Marcillat, but also to the Tarlati Chapel with the Annunciation attributed to Matteo Lappoli, the large wooden Crucifix on the high altar attributed to the Master of San Francesco, the frescoes by Spinello Aretino, other valuable works, and the recently restored funeral monument of Francesco Roselli."
+
+Write the new description making sure it perfectly fits the institutional standards and style of the ArCo portal.
 
 ### LLM Outputs 
 
-Below are the visual results obtained from the models, showing how they naturally chose to structure and organize the historical and artistic information.
+Below are the visual results obtained from the models, showing how they adapted to the academic example and structured the historical and artistic information under institutional standards:
 
 #### ChatGPT Response
-<img width="718" height="847" alt="description 2 " src="https://github.com/user-attachments/assets/b003a643-2ecd-4ca3-b8c1-cf5df7133c90" />
+<img width="705" height="847" alt="description 5 " src="https://github.com/user-attachments/assets/04ee6cd2-7a4d-4ade-9756-f042d7f4eea2" />
+
 
 #### Gemini Response
-<img width="546" height="707" alt="description 3 " src="https://github.com/user-attachments/assets/1b10947d-1926-4df0-ac2d-65b6f42d6c6c" />
+<img width="688" height="807" alt="description 6 " src="https://github.com/user-attachments/assets/4ed6deb2-8071-4272-aa1c-bb0a6098365d" />
+
 
 ✅ **LLMs comparison:**
 
-➡️ Both models provided a great overview of the Basilica, but they organized the information in very different ways:
+Both models successfully abandoned their standard formatting to mimic the dense, institutional style of the ArCo example, but they approached the academic structure differently:
 
-* **ChatGPT:** Writes the description like an essay. It uses traditional, flowing paragraphs to tell the story of the Basilica. It also automatically includes three real photographs to give a visual tour of the church.
-* **Gemini:** Chooses a highly structured layout. After a short introduction, it uses a bulleted list with bold key phrases (like **The Unfinished Facade** or **The Cassini Meridian Line**) to make the text quick and easy to scan.
-* **ChatGPT:** Focuses heavily on the art and cultural impact, highlighting details like Dante’s Inferno frescoes in the Cappella Bolognini and the mix of Gothic and Renaissance styles.
-* **Gemini:** Focuses on historical and administrative context, explaining *why* the church is unfinished (due to papal intervention) and how it served a unique civic role funded by the city rather than the bishops.
+* **ChatGPT:** Focuses heavily on the thematic narrative. It uses highly sophisticated, flowing vocabulary to explain the historical tensions between civic and church power, diving deep into the cultural meaning behind the architecture.
+* **Gemini:** Strictly replicates the literal structure of the ArCo portal example. It uses a dense, compact layout enclosed in quotation marks, heavily featuring specific dates (1390, 1400, 1475, 1492, 1547, 1655) and exact historical names to maximize its academic value.
 
 **Overall** ⬇️:
 
-**ChatGPT**: acts like a traditional travel guide, blending text and images for a smooth, narrative reading experience.
+**ChatGPT**:captures the *spirit* of the academic prompt, focusing on high-level artistic concepts and historical themes across split paragraphs.
 
-**Gemini**: acts like a modern database, breaking down the facts into clean, scannable bullet points for a quick overview.
+**Gemini**:captures the *exact template* of the institutional prompt, packing a massive amount of technical architectural facts, names, and precise dates into a direct imitation.
+
 
 ## 🌐 2. Wikidata Page 
 
