@@ -81,6 +81,40 @@ Below are the visual results obtained from the models, showing how they naturall
 
 **Gemini**: acts like a modern database, breaking down the facts into clean, scannable bullet points for a quick overview.
 
+## 🌐 2. Wikidata Page 
+
+Verifying if a monument has an official Wikidata page is important for linking its data globally, but AIs can sometimes hallucinate or generate unnecessary links. To test if the models could correctly confirm its existence using only what they already knew, we used a **Zero-Shot prompt**. We simply asked them a direct "Yes" or "No" question without giving any examples or extra links, allowing us to see how accurate they are on their own.
+
+### Prompt Used 
+
+Does an official Wikidata page exist for the Basilica of San Petronio in Bologna, Italy?
+
+### LLM Outputs 
+
+The visual evidence below displays whether the models confirmed or denied the presence of the Wikidata record:
+
+#### ChatGPT Response
+
+<img width="683" height="662" alt="WIKIDATA  1" src="https://github.com/user-attachments/assets/0cf6977d-beec-4c0b-9ca1-bcdec1d1fd77" />
+
+
+#### Gemini Response
+
+<img width="507" height="231" alt="WIKIDATA 2 " src="https://github.com/user-attachments/assets/38b15161-14b3-401f-80bb-fe7a4093deec" />
+
+✅ **LLMs comparison:**
+
+➡️ Both models correctly answered "Yes" and identified the exact Wikidata ID (**Q810103**), but they organized the data quite differently:
+
+* **ChatGPT:** Provides a highly structured and detailed report. It extracts specific data points from Wikidata (like Name, Location, Religion, and Architectural identity) into a bulleted list, provides the direct URL link, and adds a final conclusion box.
+* **Gemini:** Gives a short, direct paragraph response. Instead of listing individual data points, it summarizes what kind of information can be found on the page (like history, coordinates, and dimensions) and relies on automated citation chips for links.
+
+**Overall** ⬇️:
+
+**ChatGPT**: acts like a data analyst, creating an organized, itemized report with a direct web link.
+
+**Gemini**: acts like a fast search assistant, giving a quick text summary with automatic background source links.
+
 
 ## 🌍 3. Geographical Coordinates
 
