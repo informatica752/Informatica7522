@@ -46,7 +46,7 @@ The table below summarizes the exact prompting strategy used for each missing da
 
 > ⚠️ **Methodological Note:** Although ChatGPT and Gemini proved highly capable of retrieving information, all data extracted through these techniques underwent a manual validation process to eliminate hallucinations, especially regarding URLs and coordinates.
 
-## 🌍 1. Geographical Coordinates
+## 🌍 3. Geographical Coordinates
 
 Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
 
@@ -78,12 +78,43 @@ Could you please give me the exact latitide and longitude of the Basilica of San
 
 **Gemini:** prioritizes clarity and compactness, offering coordinates in a more simplified format that remains fully usable for general navigation purposes.
 
+## 🖼️ 4. Official Image
+
+We requested both ChatGPT and Gemini to provide a URL of an image of the Basilica of San Petronio in Bologna using a few-shot prompting approach, where an example was included to guide the expected format and type of response.
+
+### Prompt Used: 
+Please find the primary image associated with the Basilica of San Petronio (Bologna). Provide the direct image URL (JPG, PNG, or equivalent), specify whether it is an official image, a historical photograph, a contemporary photograph, or an artistic depiction. Include the exact source of the image, the page where it is hosted, the image file URL, and any available attribution or licensing information.
+
+Example: 
+An officially recognized image of the Duomo di Firenze is available on Wikimedia Commons.
+
+- URL: https://commons.wikimedia.org/wiki/File:Florence_Cathedral_(Duomo).jpg
+- Title: Florence Cathedral (Duomo).jpg:
+- Author: Kevin Poh;
+- Source:https://commons.wikimedia.org/wiki/File:Florence_Cathedral_(Duomo).jpg
+- License: https://creativecommons.org/licenses/by/2.0
+
+#### ChatGPT Response
+<img width="913" height="570" alt="image" src="https://github.com/user-attachments/assets/33872be1-398f-4b96-b0bc-56bd19bccccf" />
+<img width="902" height="466" alt="image" src="https://github.com/user-attachments/assets/6c549123-8474-4e0f-840b-dab64ca9f912" />
+
+#### Gemini Response
+<img width="753" height="727" alt="image" src="https://github.com/user-attachments/assets/1fbd0b72-aad7-432b-b381-ae8141c02307" />
+<img width="766" height="520" alt="image" src="https://github.com/user-attachments/assets/fc50ec31-2e1d-4b99-ab52-cef3aa457d3a" />
 
 
+✅ **LLM Comparison**
 
+➡️ The results highlight a key difference in how the models interpret the concept of an “official image”:
 
+**ChatGPT**: Clearly states that no official image exists and provides multiple curated Wikimedia Commons alternatives with detailed metadata and licensing information.
+**Gemini**: Selects a single “primary” image without explicitly addressing the absence of an official designation, focusing instead on visual representativeness. Gemini's response contains a further inconsistency: the image it identifies as the primary representation of the basilica does not match the image displayed at the URL it provides.
 
+**Overall** ⬇️:
 
+**ChatGPT:** adopts a more cautious and documentation-driven approach, explicitly clarifying the absence of an official image and offering multiple verified alternatives.
+
+**Gemini:** takes a more direct approach by selecting one image it considers most representative, without discussing official status or alternative options.
 
 ## 🎟️ 5. Entrance Ticket
 
