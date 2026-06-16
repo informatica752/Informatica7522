@@ -86,9 +86,9 @@ Both models successfully abandoned their standard formatting to mimic the dense,
 Verifying if a monument has an official Wikidata page is important for linking its data globally, but AIs can sometimes hallucinate or generate unnecessary links. To test if the models could correctly confirm its existence using only what they already knew, we used a **Zero-Shot prompt**. We simply asked them a direct "Yes" or "No" question without giving any examples or extra links, allowing us to see how accurate they are on their own.
 
 ### Prompt Used 
-
+```text
 Does an official Wikidata page exist for the Basilica of San Petronio in Bologna, Italy?
-
+```
 ### LLM Outputs 
 
 The visual evidence below displays whether the models confirmed or denied the presence of the Wikidata record:
@@ -121,8 +121,9 @@ Both Gemini and ChatGPT were evaluated using a zero-shot prompting technique, wh
 The objective was to assess how precisely each model can retrieve and present geospatial data for a well-known landmark.
 
 ### Prompt Used 
+```
 Could you please give me the exact latitude and longitude of the Basilica of San Petronio (Bologna)?
-
+```
 🤖 **ChatGPT Response**
 
 <img width="657" height="250" alt="image" src="https://github.com/user-attachments/assets/c99375f6-f02f-431d-9616-dd859a164dc8" />
@@ -150,8 +151,9 @@ Could you please give me the exact latitude and longitude of the Basilica of San
 We requested both ChatGPT and Gemini to provide a URL of an image of the Basilica of San Petronio in Bologna using a few-shot prompting approach, where an example was included to guide the expected format and type of response.
 
 ### Prompt Used: 
+```text
 Please find the primary image associated with the Basilica of San Petronio (Bologna). Provide the direct image URL (JPG, PNG, or equivalent), specify whether it is an official image, a historical photograph, a contemporary photograph, or an artistic depiction. Include the exact source of the image, the page where it is hosted, the image file URL, and any available attribution or licensing information.
-
+```
 Example: 
 An officially recognized image of the Duomo di Firenze is available on Wikimedia Commons.
 
@@ -188,7 +190,7 @@ An officially recognized image of the Duomo di Firenze is available on Wikimedia
 Finding out the price of admission tickets can be tricky because prices often change based on age groups, student discounts, or free entry rules. To make sure ChatGPT and Gemini didn't make mistakes, we used a **Chain-of-Thought (CoT)** prompt. This forced the models to reason step-by-step and look at all the different ticket options before giving us the final price.
 
 ### Prompt Used 
-
+```text
 Please find the entrance ticket information for the Basilica of San Petronio in Bologna, Italy.
 
 To ensure the answer is correct, think step-by-step and show your reasoning out loud before giving the final summary:
@@ -202,7 +204,7 @@ Finally, summarize the results using this format:
 - General Entry Status: [Free / Paid]
 - Special Areas & Prices: [List the areas and their specific costs]
 - Concessions/Free Entry: [Who gets a discount or enters for free]
-
+```
 ### LLM Outputs 
 
 Below are the visual results obtained from the models showing their logical breakdown before compiling the required data layout:
@@ -235,12 +237,13 @@ Below are the visual results obtained from the models showing their logical brea
 To find the official contact details, we used a **Zero-Shot** approach. We specifically designed the prompt to separate phone numbers from email addresses into distinct, clean sections. This layout was essential for us to easily read, copy, and organize the contact channels without mixing them up.
 
 ### Prompt Used 
+```text
 Please find the official contact information for the Basilica of San Petronio in Bologna, Italy.
 
 Search for phone numbers, email addresses, and the official website. You must separate the phone numbers section from the email section so they are distinct and easy to copy. If there are multiple phone numbers, list them all with labels describing what they're for (e.g., "General Info", "Booking", etc.).
 
 If a specific piece of information is missing, just write N/D.
-
+```
 ### LLM Outputs 
 
 Below are the visual results obtained from the models showing the direct information extraction and clean formatting required by our prompt.
