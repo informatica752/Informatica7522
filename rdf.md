@@ -19,6 +19,12 @@ The content that follows presents the **RDF triples** produced to complete the m
 
 ### ➡️ ChatGPT output:
 
+We leveraged ChatGPT to transform the following details into an RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:lat` | 44.29346 |
+
 ```turtle
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
@@ -33,6 +39,12 @@ Next, we asked Chat GPT to aplly the same approach to generate the longitude val
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
 
 ➡️ **Resulting RDF triple**:
+
+The RDF triple was generated via ChatGPT using the following input data:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:long` | 11.343126 |
 
 ```turtle
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
