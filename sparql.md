@@ -287,7 +287,7 @@ WHERE {
   UNION
   {
     <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
-        arco:image ?image .
+        arco:hasRepresentativeImage ?image .
   }
   UNION
   {
@@ -301,9 +301,9 @@ LIMIT 10
 📝 Analysing the query:
 To maximize the efficiency of this check, the query implements a `UNION` pattern, cross-referencing three distinct semantic pathways where an image asset might be nested:
 
-* `foaf:depiction`: The cross-domain standard predicate used to link a conceptual resource to its visual representation.
-* `arco:image`: A specific core property within the ArCo ontology tailored for binding cultural properties directly to their photographic documentation.
-* `arco:hasDigitalRepresentation`: A broader ontological property designed to connect physical monuments with their web-accessible digital twins or files.
+* `foaf:depiction`: the cross-domain standard predicate used to link a conceptual resource to its visual representation.
+* `arco:hasRepresentative`:from the ArCo ontology; usually points to a representative image of the cultural entity.
+* `arco:hasDigitalRepresentation`: a broader ontological property designed to connect physical monuments with their web-accessible digital twins or files.
 
 📊 Results:
 ❌ Empty Table
