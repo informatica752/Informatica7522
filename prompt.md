@@ -52,7 +52,7 @@ Providing a description that fits highly specialized academic standards can be d
 
 ### Prompt Used 
 
-```sparql
+```text
 Please provide a description of the Basilica of San Petronio in Bologna, Italy, matching the style of the following example found on ArCo: 
 "The Gothic basilica of San Francesco, rich in frescoed testimonies of fourteenth-century Aretine painting, welcomes one of the greatest masterpieces of the Renaissance, the 'Legend of the True Cross' by Piero della Francesca, the extraordinary cycle painted by the artist between around 1452 and 1455 in the Bacci Chapel."
 
