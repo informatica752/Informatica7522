@@ -175,8 +175,7 @@ By comparing the results of Query 2 and Query 3 with the first Query, we outline
 * 3.📍 Geographical coordinates 
 * 4.📷 Official image
 * 5.🎟️ Entrance ticket
-* 6.⛔ Access Conditions
-* 7.📞 Contact 
+* 6.📞 Contact 
 
 ## Step 5: Queries to double-check these gaps ArCo
 In order to ensure the absence of such information on ArCo, we run some queries, using the previously found IRI of Basilica di San Petronio: http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio
@@ -336,6 +335,32 @@ LIMIT 10
 📊 Results:
 ❌ Empty Table
 
-### Query 6: Verifying the absence of information about access conditions⛔
+### Query 6: Verifying the absence of contact details📞
+Query: Verifying the presence of contact details
 
-### Query 7: Verifying the absence of contact details📞
+```sparql
+PREFIX smapit: <https://w3id.org/italia/onto/SM/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?contactPoint ?contactType ?contactValue
+WHERE {
+  # Target-locking the specific URI for the Basilica requested by the user
+  <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio> 
+      smapit:hasOnlineContactPoint ?contactPoint .
+  
+  # Extracting fields directly from the targeted contact node
+  OPTIONAL { ?contactPoint rdfs:label ?contactType . }
+  OPTIONAL { ?contactPoint smapit:hasEmail ?contactValue . }
+  OPTIONAL { ?contactPoint smapit:hasTelephone ?contactValue . }
+  OPTIONAL { ?contactPoint smapit:hasWebSite ?contactValue . }
+}
+LIMIT 10
+```
+
+📝 Analysing the query:
+* By using the unique, hardcoded URI of Basilica di San Petronio, we ensured that the endpoint evaluates only the explicit graph node belonging to the main church building, ignoring the separate museum node or any secondary regional records.
+* Property Selection (`smapit:hasOnlineContactPoint`): This relation looks for an outward link from the physical church node to an abstract digital container defined by the `SM-AP-IT` (Social Media and Contact Points) ontology profile.
+* The `OPTIONAL`parameter runs parallel, independent checks to capture its categorization label (`rdfs:label`), an e-mail box (`smapit:hasEmail`), a phone line (`smapit:hasTelephone`), or a main website link (`smapit:hasWebSite`), ensuring any available data point is mapped into the `?contactValue` column.
+
+📊 Results:
+❌ Empty Dataset
