@@ -56,10 +56,12 @@ The objective was to assess how precisely each model can retrieve and present ge
 Could you please give me the exact latitide and longitude of the Basilica of San Petrionio (Bologna)?
 
 🤖 **ChatGPT Response**
+
 <img width="657" height="250" alt="image" src="https://github.com/user-attachments/assets/c99375f6-f02f-431d-9616-dd859a164dc8" />
 
 
 🤖 **Gemini Response**
+
 <img width="599" height="137" alt="image" src="https://github.com/user-attachments/assets/1a646310-252c-46e0-9c90-e06871b10ac8" />
 
 
