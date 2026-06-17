@@ -36,7 +36,7 @@ We leveraged ChatGPT to transform the following details into an RDF triple:
 
 #### Longitude generation
 
-Next, we asked Chat GPT to aplly the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
+Next, we asked Chat GPT to apply the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
 
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
 
