@@ -47,6 +47,26 @@ We gave ChatGPT the following information to generate the RDF triple:
 | :--- | :--- | :--- |
 | [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `l0:description` | The Gothic basilica of San Petronio in Bologna (…) in pre-modern Europe. |
 
+## 2. RDF Triple for wikidata link
+Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple:
+<img width="1160" height="384" alt="image" src="https://github.com/user-attachments/assets/a9022cd1-620e-42ad-93ae-7ad3be2141e0" />
+
+Result:
+```turtle
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix arco: <https://w3id.org/arco/ontology/core/> .
+
+<http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
+    rdfs:label "Basilica di San Petronio, Bologna"@it ;
+    owl:sameAs <http://www.wikidata.org/entity/Q810103> 
+```
+We gave ChatGPT the following information to generate the RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `owl:sameAs` | <http://www.wikidata.org/entity/Q810103> |
+
 ## 3. RDF Triples for Geographical Coordinates
 
 📍 We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
