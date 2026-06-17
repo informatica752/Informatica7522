@@ -124,6 +124,10 @@ The objective was to assess how precisely each model can retrieve and present ge
 ```
 Could you please give me the exact latitude and longitude of the Basilica of San Petronio (Bologna)?
 ```
+### LLM Outputs 
+
+Below are the visual results obtained from the models, showing how they naturally extracted and presented the precise geographical coordinates of the Basilica
+
 🤖 **ChatGPT Response**
 
 <img width="657" height="250" alt="image" src="https://github.com/user-attachments/assets/c99375f6-f02f-431d-9616-dd859a164dc8" />
@@ -162,6 +166,9 @@ An officially recognized image of the Duomo di Firenze is available on Wikimedia
 - Author: Kevin Poh
 - Source: https://commons.wikimedia.org/wiki/File:Florence_Cathedral_(Duomo).jpg
 - License: https://creativecommons.org/licenses/by/2.0
+
+### LLM Outputs 
+Below are the visual results obtained from the models, showing how they followed the provided examples to locate and fetch the official image of the Basilica.
 
 #### ChatGPT Response
 <img width="913" height="570" alt="image" src="https://github.com/user-attachments/assets/33872be1-398f-4b96-b0bc-56bd19bccccf" />
