@@ -175,4 +175,57 @@ Chat GPT generated the following triple:
     a arco:CulturalInstituteOrSite ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Basilica_di_San_Petronio_-_Bologna.jpg> .
 ```
+## 5. RDF for entrance ticket
+Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple to link all information about the entrance ticket to the Basilica of San Petronio:
+
+<img width="631" height="337" alt="image" src="https://github.com/user-attachments/assets/b547c625-be0f-4ccf-96d1-53ae4bae5f3b" />
+
+Result:
+```turtle
+@prefix potapit: <http://dati.beniculturali.it/lod/potapit/> .
+@prefix l0: <http://dati.beniculturali.it/lod/l0/> .
+@prefix sm: <http://www.ontologydesignpatterns.org/cp/owl/simplemetadata.owl#> .
+@prefix arco: <http://dati.beniculturali.it/lod/arco/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio.html>
+    rdf:type arco:CulturalInstituteOrSite ;
+
+    potapit:hasTicket <https://example.org/ticket/BasilicaSanPetronio_FreeEntry> ,
+                      <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_FullTicket> ,
+                      <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_ReducedTicket> ,
+                      <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_SchoolTicket> ,
+                      <https://example.org/ticket/BasilicaSanPetronio_IndividualChapelVisit> .
+
+### FREE ENTRY (Main Basilica + Museum)
+<https://example.org/ticket/BasilicaSanPetronio_FreeEntry>
+    rdf:type potapit:Ticket ;
+    l0:name "Free Entry - Main Basilica and Museum Access" ;
+    sm:price "0 EUR" .
+
+### FULL TICKET (Chapel Route)
+<https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_FullTicket>
+    rdf:type potapit:Ticket ;
+    l0:name "Chapel Route - Full Ticket (Re Magi, San Sebastiano, San Vincenzo Ferrer)" ;
+    sm:price "5 EUR" .
+
+### REDUCED TICKET (Chapel Route)
+<https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_ReducedTicket>
+    rdf:type potapit:Ticket ;
+    l0:name "Chapel Route - Reduced Ticket (students 11–18, over 65, guided groups)" ;
+    sm:price "3 EUR" .
+
+### SCHOOL GROUP TICKET
+<https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_SchoolTicket>
+    rdf:type potapit:Ticket ;
+    l0:name "Chapel Route - School Groups Ticket" ;
+    sm:price "2 EUR" .
+
+### INDIVIDUAL CHAPEL VISIT (SPECIAL ACCESS)
+<https://example.org/ticket/BasilicaSanPetronio_IndividualChapelVisit>
+    rdf:type potapit:Ticket ;
+    l0:name "Individual Chapel or Presbytery Visit (on reservation)" ;
+    sm:price "3 EUR per chapel" .
+```
+
 
