@@ -113,7 +113,7 @@ By applying the `FILTER` directly to the label `l`, and by limiting the results 
 
 **2. `?entity` `?property` `?value`**
 
-**How it extracts:** This is our data-grabber. It tells the query to retrieve every single property and every single value connected directly to those cultural sites.
+**How it extracts:** This is our data-grabber. It tells the query to retrieve every single property and every single value connected directly to those cultural sites. 
 
 **3. `FILTER`(`REGEX`(`?l`, "basilica", "`i`"))**
 
