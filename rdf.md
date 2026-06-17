@@ -181,15 +181,14 @@ The RDF triple was generated via ChatGPT using the following input data:
 
 ➡️ **Result:**
 ```turtle
-@prefix potapit: <http://dati.beniculturali.it/lod/potapit/> .
-@prefix l0: <http://dati.beniculturali.it/lod/l0/> .
-@prefix sm: <http://www.ontologydesignpatterns.org/cp/owl/simplemetadata.owl#> .
-@prefix arco: <http://dati.beniculturali.it/lod/arco/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix arco:    <https://w3id.org/arco/ontology/arco/> .
+@prefix potapit: <https://w3id.org/italia/onto/POT/> .
+@prefix l0:      <https://w3id.org/italia/onto/l0/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio.html>
     rdf:type arco:CulturalInstituteOrSite ;
-
     potapit:hasTicket <https://example.org/ticket/BasilicaSanPetronio_FreeEntry> ,
                       <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_FullTicket> ,
                       <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_ReducedTicket> ,
@@ -199,27 +198,42 @@ The RDF triple was generated via ChatGPT using the following input data:
 <https://example.org/ticket/BasilicaSanPetronio_FreeEntry>
     rdf:type potapit:Ticket ;
     l0:name "Free Entry - Main Basilica and Museum Access" ;
-    sm:price "0 EUR" .
+    potapit:hasPriceSpecification [
+        potapit:price "0.00"^^xsd:decimal ;
+        potapit:currency "EUR"
+    ] .
 
 <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_FullTicket>
     rdf:type potapit:Ticket ;
     l0:name "Chapel Route - Full Ticket (Re Magi, San Sebastiano, San Vincenzo Ferrer)" ;
-    sm:price "5 EUR" .
+    potapit:hasPriceSpecification [
+        potapit:price "5.00"^^xsd:decimal ;
+        potapit:currency "EUR"
+    ] .
 
 <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_ReducedTicket>
     rdf:type potapit:Ticket ;
     l0:name "Chapel Route - Reduced Ticket (students 11–18, over 65, guided groups)" ;
-    sm:price "3 EUR" .
+    potapit:hasPriceSpecification [
+        potapit:price "3.00"^^xsd:decimal ;
+        potapit:currency "EUR"
+    ] .
 
 <https://example.org/ticket/BasilicaSanPetronio_ChapelRoute_SchoolTicket>
     rdf:type potapit:Ticket ;
     l0:name "Chapel Route - School Groups Ticket" ;
-    sm:price "2 EUR" .
+    potapit:hasPriceSpecification [
+        potapit:price "2.00"^^xsd:decimal ;
+        potapit:currency "EUR"
+    ] .
 
 <https://example.org/ticket/BasilicaSanPetronio_IndividualChapelVisit>
     rdf:type potapit:Ticket ;
     l0:name "Individual Chapel or Presbytery Visit (on reservation)" ;
-    sm:price "3 EUR per chapel" .
+    potapit:hasPriceSpecification [
+        potapit:price "3.00"^^xsd:decimal ;
+        potapit:currency "EUR" 
+    ] .
 ```
 
 ## 6. RDF for contact information 📞
