@@ -25,7 +25,7 @@ To find the most accurate and compliant data layout for ArCo's standards, we tes
 The content that follows presents the **RDF triples** produced to complete the missing elements identified earlier.
 
 ## 1. RDF Triple for description
-Using a zero-shot prompting technique, we asked ChatGPT to create a RDF Triple:
+Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple:
  <img width="802" height="1248" alt="image" src="https://github.com/user-attachments/assets/ef8c6e62-43a8-43a9-8ede-0b0e9cd6097b" />
 
 Result:
