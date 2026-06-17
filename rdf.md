@@ -43,10 +43,9 @@ Particularly notable within the basilica is the monumental meridian line traced 
 ```
 We gave ChatGPT the following information to generate the RDF triple:
 
-Subject: Basilica di San Petronio, URI <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
-Predicate: l0:description
-Object: The Gothic basilica of San Petronio in Bologna (…) in pre-modern Europe.
-
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `l0:description` | The Gothic basilica of San Petronio in Bologna (…) in pre-modern Europe. |
 
 ## 3. RDF Triples for Geographical Coordinates
 
