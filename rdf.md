@@ -68,6 +68,7 @@ We gave ChatGPT the following information to generate the RDF triple:
 
 We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
 
+#### Latitude generation
 <img width="365" height="310" alt="image" src="https://github.com/user-attachments/assets/2f36bb30-12be-4e3a-bbcc-446a6c13ca18" />
 
 We leveraged ChatGPT to transform the following details into an RDF triple:
