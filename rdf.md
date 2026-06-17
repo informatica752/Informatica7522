@@ -223,7 +223,7 @@ The RDF triple was generated via ChatGPT using the following input data:
 ```
 
 ## 6. RDF for contact information 📞
-In order to add the missing information about contact details to the ArCo Knowledge Graph, we decided to use **chain-of-thought** prompting technique. Forcing the model to reason step-by-step ensures it plans the graph structure first, correctly mapping every office to its own unique URI and generating flawless, hallucination-free RDF code as shown below:
+In order to add the missing information about contact details to the ArCo Knowledge Graph, we decided to use the **chain-of-thought** prompting technique. Forcing the model to reason step-by-step ensures it plans the graph structure first, correctly mapping every office to its own unique URI and generating flawless, hallucination-free RDF code as shown below:
 
 <img width="661" height="507" alt="image" src="https://github.com/user-attachments/assets/d0a6420c-1831-42cd-87ef-0a3efa79bb6c" />
 
