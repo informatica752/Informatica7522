@@ -17,7 +17,7 @@ The ultimate goal of this section is to produce structured semantic data designe
 
 To find the most accurate and compliant data layout for ArCo's standards, we tested the model using three different prompting strategies: **Zero-Shot**, **Few-Shot**, and **Chain-of-Thought (CoT)**. 
 
-
+---
 ```turtle
 @prefix ex: [http://example.org/](http://example.org/) .
 ```
