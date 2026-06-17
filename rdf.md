@@ -24,6 +24,12 @@ The content that follows presents the **RDF triples** produced to complete the m
 Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Triple:
  <img width="802" height="1248" alt="image" src="https://github.com/user-attachments/assets/ef8c6e62-43a8-43a9-8ede-0b0e9cd6097b" />
 
+We gave ChatGPT the following information to generate the RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `l0:description` | The Gothic basilica of San Petronio in Bologna (…) in pre-modern Europe. |
+
 ➡️ **Result:**
 ```turtle
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
@@ -37,15 +43,16 @@ The vast interior, articulated by a solemn succession of towering piers and poin
 
 Particularly notable within the basilica is the monumental meridian line traced on the floor of the nave by Giovanni Domenico Cassini in 1655, an extraordinary scientific instrument embedded in sacred space. This precise astronomical device, aligned with the sun's movement, allowed for refined measurements of the solar year and constitutes a rare synthesis of scientific inquiry and religious architecture, emblematic of Bologna's historic role as a center of learning. The basilica also preserves important sculptural and pictorial testimonies, including chapels enriched with Renaissance and late medieval frescoes, devotional altarpieces, and architectural elements that reflect the continuous adaptation of the building across centuries. Its complex stratigraphy, combining unfinished monumental ambition with layered artistic contributions, makes San Petronio not only a place of worship but also a fundamental reference point for the study of Gothic architecture, urban identity, and the dialogue between art, science, and civic power in pre-modern Europe."""@en .
 ```
-We gave ChatGPT the following information to generate the RDF triple:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `l0:description` | The Gothic basilica of San Petronio in Bologna (…) in pre-modern Europe. |
 
 ## 2. RDF Triple for wikidata link 🔗
 Through a **zero-shot** prompt, ChatGPT generated the RDF triples to connect the Basilica with its relative wikidata link:
 <img width="1160" height="384" alt="image" src="https://github.com/user-attachments/assets/a9022cd1-620e-42ad-93ae-7ad3be2141e0" />
+
+We gave ChatGPT the following information to generate the RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `owl:sameAs` | <http://www.wikidata.org/entity/Q810103> |
 
 ➡️ **Result:**
 ```turtle
@@ -57,18 +64,18 @@ Through a **zero-shot** prompt, ChatGPT generated the RDF triples to connect the
     rdfs:label "Basilica di San Petronio, Bologna"@it ;
     owl:sameAs <http://www.wikidata.org/entity/Q810103> 
 ```
-We gave ChatGPT the following information to generate the RDF triple:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `owl:sameAs` | <http://www.wikidata.org/entity/Q810103> |
-
 ## 3. RDF Triples for Geographical Coordinates 📍
 
 We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
 
 <img width="365" height="310" alt="image" src="https://github.com/user-attachments/assets/2f36bb30-12be-4e3a-bbcc-446a6c13ca18" />
 
+We leveraged ChatGPT to transform the following details into an RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:lat` | 44.29346 |
+ 
 ➡️ **Result:**
 
 ```turtle
@@ -77,17 +84,18 @@ We prompted ChatGPT to generate an RDF triple for the latitude using a **few-sho
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:lat "44.29346" .
 ```
-We leveraged ChatGPT to transform the following details into an RDF triple:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:lat` | 44.29346 |
 
 #### Longitude generation
 
 Next, we asked Chat GPT to apply the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
 
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
+
+The RDF triple was generated via ChatGPT using the following input data:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:long` | 11.343126 |
 
 ➡️ **Result:**
 
@@ -97,11 +105,6 @@ Next, we asked Chat GPT to apply the same approach to generate the longitude val
 <http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio>
     geo:long "11.343126" .
 ```
-The RDF triple was generated via ChatGPT using the following input data:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `geo:long` | 11.343126 |
 
 #### Merging latitude and longitude
 
@@ -169,6 +172,12 @@ Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Trip
 
 <img width="631" height="337" alt="image" src="https://github.com/user-attachments/assets/b547c625-be0f-4ccf-96d1-53ae4bae5f3b" />
 
+The RDF triple was generated via ChatGPT using the following input data:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `potapit:hasTicket` | all ticket information |
+
 ➡️ **Result:**
 ```turtle
 @prefix potapit: <http://dati.beniculturali.it/lod/potapit/> .
@@ -212,16 +221,16 @@ Using a **zero-shot** prompting technique, we asked ChatGPT to create a RDF Trip
     sm:price "3 EUR per chapel" .
 ```
 
-The RDF triple was generated via ChatGPT using the following input data:
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `potapit:hasTicket` | all ticket information |
-
 ## 6. RDF for contact information 📞
 In order to add the missing information about contact details to the ArCo Knowledge Graph, we decided to use **chain-of-thought** prompting technique. Forcing the model to reason step-by-step ensures it plans the graph structure first, correctly mapping every office to its own unique URI and generating flawless, hallucination-free RDF code as shown below:
 
 <img width="661" height="507" alt="image" src="https://github.com/user-attachments/assets/d0a6420c-1831-42cd-87ef-0a3efa79bb6c" />
+
+We gave ChatGPT the following information to generate the RDF triple:
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `smapit:hasOnlineContactPoint` | all contact information |
 
 ➡️ **Result:**
 <img width="667" height="401" alt="image" src="https://github.com/user-attachments/assets/e49100e4-9513-4666-b2d2-35ce7c27cfa5" />
@@ -274,8 +283,3 @@ In order to add the missing information about contact details to the ArCo Knowle
     l0:name "Official Website" ;
     smapit:website "https://www.basilicadisanpetronio.org" .
 ```
-
-| Subject | Predicate | Object |
-| :--- | :--- | :--- |
-| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `smapit:hasOnlineContactPoint` | all contact information |
-
