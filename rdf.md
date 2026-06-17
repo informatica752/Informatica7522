@@ -228,3 +228,65 @@ The RDF triple was generated via ChatGPT using the following input data:
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
 | [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `potapit:hasTicket` | all ticket information |
+
+## 6. RDF for contact information
+In order to add the missing information about contact details to the ArCo Knowledge Graph, we decided to use **chain-of-thought** prompting technique. Forcing the model to reason step-by-step ensures it plans the graph structure first, correctly mapping every office to its own unique URI and generating flawless, hallucination-free RDF code as shown below:
+
+<img width="661" height="507" alt="image" src="https://github.com/user-attachments/assets/d0a6420c-1831-42cd-87ef-0a3efa79bb6c" />
+
+Results: 
+<img width="667" height="401" alt="image" src="https://github.com/user-attachments/assets/e49100e4-9513-4666-b2d2-35ce7c27cfa5" />
+
+```turtle
+@prefix smapit: <http://dati.beniculturali.it/lodview/ontologies/smapit/> .
+@prefix l0: <http://dati.beniculturali.it/lodview/ontologies/l0/> .
+@prefix arco: <http://dati.beniculturali.it/lodview/ontologies/arco/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio.html>
+    smapit:hasOnlineContactPoint <http://example.org/contact/phone_general>,
+                                 <http://example.org/contact/phone_archive>,
+                                 <http://example.org/contact/email_info>,
+                                 <http://example.org/contact/email_prenotazioni>,
+                                 <http://example.org/contact/email_sacrestia>,
+                                 <http://example.org/contact/email_archivio_storico>,
+                                 <http://example.org/contact/email_archivio_musicale>,
+                                 <http://example.org/contact/website> .
+
+<http://example.org/contact/phone_general>
+    l0:name "General Information / Sacristy Phone" ;
+    smapit:telephone "+39 051 231415" .
+
+<http://example.org/contact/phone_archive>
+    l0:name "Historical Archive Phone" ;
+    smapit:telephone "+39 348 4414917" .
+
+<http://example.org/contact/email_info>
+    l0:name "General Information Email" ;
+    smapit:email "info@basilicadisanpetronio.org" .
+
+<http://example.org/contact/email_prenotazioni>
+    l0:name "Group Visits and Bookings Email" ;
+    smapit:email "prenotazioni@basilicadisanpetronio.org" .
+
+<http://example.org/contact/email_sacrestia>
+    l0:name "Sacristy Email (Liturgical Services)" ;
+    smapit:email "sacrestia@basilicadisanpetronio.org" .
+
+<http://example.org/contact/email_archivio_storico>
+    l0:name "Historical Archive Email" ;
+    smapit:email "archivio.storico@basilicadisanpetronio.org" .
+
+<http://example.org/contact/email_archivio_musicale>
+    l0:name "Musical Archive Email" ;
+    smapit:email "archivio.musicale@basilicadisanpetronio.org" .
+
+<http://example.org/contact/website>
+    l0:name "Official Website" ;
+    smapit:website "https://www.basilicadisanpetronio.org" .
+```
+
+| Subject | Predicate | Object |
+| :--- | :--- | :--- |
+| [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `smapit:hasOnlineContactPoint` | all contact information |
+
