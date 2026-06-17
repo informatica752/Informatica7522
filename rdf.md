@@ -24,6 +24,10 @@ To find the most accurate and compliant data layout for ArCo's standards, we tes
 
 The content that follows presents the **RDF triples** produced to complete the missing elements identified earlier.
 
+## 1. RDF Triple for description
+Using a zero-shot prompting technique, we asked ChatGPT to create a RDF Triple:
+
+
 ## 3. RDF Triples for Geographical Coordinates
 
 📍 We prompted ChatGPT to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
