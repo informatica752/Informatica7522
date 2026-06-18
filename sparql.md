@@ -337,7 +337,7 @@ LIMIT 10
 
 **Analyzing the query:**
 
-* **Property Selection** (`potapit:hasTicket`): This property comes from the POT-AP-IT (Prices, Offers, Tickets - Italian Application Profile) vocabulary, integrated into ArCo to model entry fees and ticket information.
+* **Property Selection** (`potapit:hasTicket`): This property comes from the `POT-AP-IT` (Prices, Offers, Tickets - Italian Application Profile) vocabulary, integrated into ArCo to model entry fees and ticket information.
 * **`OPTIONAL` Blocks:** Instead of a rigid lookup, the query uses `OPTIONAL` patterns to retrieve any additional human-readable labels or specific price structures.
 
 **Results:** ❌ Empty Table
