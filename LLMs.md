@@ -152,7 +152,7 @@ Below are the visual results obtained from the models, showing how they naturall
 
 ## 🖼️ 4. Official Image
 
-We requested both ChatGPT and Gemini to provide a URL of an image of the Basilica of San Petronio in Bologna using a few-shot prompting approach, where an example was included to guide the expected format and type of response.
+We requested both ChatGPT and Gemini to provide a URL of an image of the Basilica of San Petronio in Bologna using a **few-shot prompting** approach, where an example was included to guide the expected format and type of response.
 
 ### Prompt Used: 
 ```text
