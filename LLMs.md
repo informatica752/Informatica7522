@@ -128,11 +128,11 @@ Could you please give me the exact latitude and longitude of the Basilica of San
 
 Below are the visual results obtained from the models, showing how they naturally extracted and presented the precise geographical coordinates of the Basilica
 
-🤖 **ChatGPT Response**
+#### ChatGPT Response
 
 <img width="657" height="250" alt="image" src="https://github.com/user-attachments/assets/c99375f6-f02f-431d-9616-dd859a164dc8" />
 
-🤖 **Gemini Response**
+#### Gemini Response
 
 <img width="599" height="137" alt="image" src="https://github.com/user-attachments/assets/1a646310-252c-46e0-9c90-e06871b10ac8" />
 
