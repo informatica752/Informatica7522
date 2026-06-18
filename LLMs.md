@@ -274,3 +274,6 @@ Below are the visual results obtained from the models showing the direct informa
 **ChatGPT**: goes much deeper into internal details, finding specific contacts for advanced or niche requests (like archives).
 
 **Gemini**: keeps it simple for the general public, showing only the most important tourist lines and the official church registry email.
+
+
+### 🏠 [Torna alla Homepage](index.html)
