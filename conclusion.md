@@ -36,3 +36,6 @@ During our work, we faced and resolved four main challenges related to data crea
 •	**Human-in-the-Loop** Our experience with Gemini and ChatGPT showed us both the power and the limitations of Large Language Models. AI was incredibly helpful for writing code quickly, but it cannot work completely alone in cultural heritage projects. When the models gave us conflicting images for the Basilica or made mistakes with complex data like tickets and contacts, we realized that human judgment is irreplaceable. We had to act as supervisors, checking every detail against official documents to make sure the final data was true, logical, and accurate.
 
 •	**Semantic Contribution:** Ultimately, the most rewarding part of this project was filling real data gaps for the Basilica di San Petronio. By generating precise RDF triples in Turtle syntax according to ArCo standards, we created structured data that is ready to be integrated into the semantic web. This contribution helps make digital cultural heritage more complete and accessible for everyone.
+
+
+### 🏠 [Torna alla Homepage](index.html)
