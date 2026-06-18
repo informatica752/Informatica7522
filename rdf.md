@@ -248,7 +248,9 @@ We gave ChatGPT the following information to generate the RDF triple:
 | :--- | :--- | :--- |
 | [Basilica di San Petronio in Bologna](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) | `smapit:hasOnlineContactPoint` | all contact information |
 
+
 ➡️ **Result:**
+
 <img width="667" height="401" alt="image" src="https://github.com/user-attachments/assets/e49100e4-9513-4666-b2d2-35ce7c27cfa5" />
 
 ```turtle
