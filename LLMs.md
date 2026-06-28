@@ -116,7 +116,7 @@ The visual evidence below displays whether the models confirmed or denied the pr
 
 ## 🌍 3. Geographical Coordinates
 
-Both Gemini and ChatGPT were evaluated using a **zero-shot prompting** technique, where they were tasked with providing the exact latitude and longitude of the Basilica of San Petronio in Bologna, Italy.
+Both [Gemini](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico)) and [ChatGPT](https://it.wikipedia.org/wiki/ChatGPT) were evaluated using a **zero-shot prompting** technique, where they were tasked with providing the exact latitude and longitude of the [Basilica of San Petronio in Bologna](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio), [Italy](https://it.wikipedia.org/wiki/Italia).
 
 The objective was to assess how precisely each model can retrieve and present geospatial data for a well-known landmark.
 
@@ -138,7 +138,7 @@ Below are the visual results obtained from the models, showing how they naturall
 
 ✅ **LLM Comparison**
 
-➡️ Both models successfully identified the correct geographical location of the Basilica of San Petronio in Bologna and provided highly similar coordinate values. However, minor differences were observed in numerical precision and formatting:
+➡️ Both models successfully identified the correct geographical location of the [Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) in [Bologna](https://it.wikipedia.org/wiki/Bologna) and provided highly similar coordinate values. However, minor differences were observed in numerical precision and formatting:
 
 **Gemini**: Presents coordinates in a slightly rounded format, prioritizing simplicity and readability over decimal granularity.
 
@@ -152,7 +152,7 @@ Below are the visual results obtained from the models, showing how they naturall
 
 ## 🖼️ 4. Official Image
 
-We requested both ChatGPT and Gemini to provide a URL of an image of the Basilica of San Petronio in Bologna using a **few-shot prompting** approach, where an example was included to guide the expected format and type of response.
+We requested both ChatGPT and Gemini to provide a URL of an image of the [Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) in [Bologna](https://it.wikipedia.org/wiki/Bologna) using a **few-shot prompting** approach, where an example was included to guide the expected format and type of response.
 
 ### Prompt Used: 
 ```text
@@ -182,7 +182,7 @@ Below are the visual results obtained from the models, showing how they followed
 
 ➡️ The results highlight a key difference in how the models interpret the concept of an "official image":
 
-**ChatGPT**: Clearly states that no official image exists and provides multiple curated Wikimedia Commons alternatives with detailed metadata and licensing information.
+**ChatGPT**: Clearly states that no official image exists and provides multiple curated [Wikimedia Commons](https://en.wikipedia.org/wiki/Wikimedia_Commons) alternatives with detailed metadata and licensing information.
 
 **Gemini**: Selects a single "primary" image without explicitly addressing the absence of an official designation, focusing instead on visual representativeness. Gemini's response contains a further inconsistency: the image it identifies as the primary representation of the basilica does not match the image displayed at the URL it provides.
 
@@ -265,7 +265,7 @@ Below are the visual results obtained from the models showing the direct informa
 ➡️ Both models found the main contact information and separated phone numbers from emails, but they chose a different level of detail:
 
 * **ChatGPT:** Digs deeper into internal offices. It finds specific contacts for researchers and historians, like the phone number and email for the Historical Archive, the Musical Archive email, and other niche department contacts.
-* **Gemini:** Focuses only on the main contacts used by standard tourists and group planners (general info and booking). It includes an official email address listed by the Archdiocese of Bologna (`basilicasanpetronio@archibo.it`).
+* **Gemini:** Focuses only on the main contacts used by standard tourists and group planners (general info and booking). It includes an official email address listed by the [Archdiocese of Bologna](https://it.wikipedia.org/wiki/Arcidiocesi_di_Bologna) (`basilicasanpetronio@archibo.it`).
 
 **Overall** ⬇️:
 
