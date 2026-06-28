@@ -103,7 +103,7 @@ The visual evidence below displays whether the models confirmed or denied the pr
 
 ✅ **LLMs comparison:**
 
-➡️ Both models correctly answered "Yes" and identified the exact [Wikidata](https://it.wikipedia.org/wiki/Wikidata) ** ID (**Q810103**), but they organized the data quite differently:
+➡️ Both models correctly answered "Yes" and identified the exact [Wikidata](https://it.wikipedia.org/wiki/Wikidata) ID (**Q810103**), but they organized the data quite differently:
 
 * **ChatGPT:** Provides a highly structured and detailed report. It extracts specific data points from Wikidata (like Name, Location, Religion, and Architectural identity) into a bulleted list, provides the direct URL link, and adds a final conclusion box.
 * **Gemini:** Gives a short, direct paragraph response. Instead of listing individual data points, it summarizes what kind of information can be found on the page (like history, coordinates, and dimensions) and relies on automated citation chips for links.
