@@ -5,11 +5,11 @@ title: 🤖 LLM Prompts
 
 # 🤖 LLM Querying & Prompt Engineering
 
-To retrieve the missing data for the points of interest in **Arco**, we queried Large Language Models (LLMs) using different Prompt Engineering strategies. 
+To retrieve the missing data for the points of interest in **[Arco](https://dati.beniculturali.it/arco/index.php)**, we queried [Large Language Models (LLMs)](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) using different [Prompt Engineering](https://en.wikipedia.org/wiki/Prompt_engineering) strategies. 
 
 ## 🛠️ Models Utilized
-* **ChatGPT (OpenAI):** Utilized for its high precision in structured formatting and complex reasoning tasks.
-* **Gemini (Google):** Employed for its strong contextual understanding and fluid textual generation.
+* **[ChatGPT (OpenAI)](https://it.wikipedia.org/wiki/ChatGPT):** Utilized for its high precision in structured formatting and complex reasoning tasks.
+* **[Gemini (Google)](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico)):** Employed for its strong contextual understanding and fluid textual generation.
 
 The choice of the prompting technique was carefully selected and adapted for both models based on the nature of the data to be extracted (e.g., free-form text, strict formats, or data requiring logical reasoning).
 
