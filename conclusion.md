@@ -38,4 +38,4 @@ During our work, we faced and resolved three main challenges related to data cre
 •	**Semantic Contribution:** Ultimately, the most rewarding part of this project was filling real data gaps for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio). By generating precise RDF triples in [Turtle syntax](https://en.wikipedia.org/wiki/Turtle_(syntax)) according to [ArCo](https://dati.beniculturali.it/arco/index.php) standards, we created structured data that is ready to be integrated into the semantic web. This contribution helps make digital cultural heritage more complete and accessible for everyone.
 
 
-### 🏠 [Torna alla Homepage](index.html)
+### 🏠 [Back to homepage](index.html)
