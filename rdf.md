@@ -7,24 +7,24 @@ title: 💎 RDF Triples
 
 
 ### What are RDF Triples used for?
-In the traditional web, pages are linked together, but computers don't understand what the text inside them actually means. **RDF Triples solve this problem by giving meaning to data.** They allow search engines, AI models, and applications to automatically connect different pieces of information, cross-reference data from different websites (like linking [Wikipedia](https://it.wikipedia.org/wiki/Pagina_principale) with museum archives), and run complex smart searches instead of just looking for simple keywords.
+In the traditional web, pages are linked together, but computers don't understand what the text inside them actually means. **RDF Triples solve this problem by giving meaning to data.** They allow [search engines](https://en.wikipedia.org/wiki/Search_engine), [AI models](https://it.wikipedia.org/wiki/Intelligenza_artificiale_generativa), and applications to automatically connect different pieces of information, cross-reference data from different websites (like linking [Wikipedia](https://it.wikipedia.org/wiki/Pagina_principale) with museum archives), and run complex smart searches instead of just looking for simple keywords.
 
 ### How they work
-To do this, RDF Triples connect information using a basic three-word statement: **Subject - Predicate - Object**. 
+To do this, [RDF Triples](https://it.wikipedia.org/wiki/Resource_Description_Framework) connect information using a basic three-word statement: **Subject - Predicate - Object**. 
 
 ### Our Goal
-The goal of this section is to produce structured semantic data designed to fill specific information gaps identified on the official **[ArCo](https://dati.beniculturali.it/arco/index.php) (Architecture of Knowledge)** portal regarding the Basilica of San Petronio. Instead of processing a pre-written description, we took the data provided by **[ChatGPT](https://chatgpt.com/)** to resolve these gaps and asked the model to **generate** corresponding formal RDF triples.
+The goal of this section is to produce structured semantic data designed to fill specific information gaps identified on the official **[ArCo](https://dati.beniculturali.it/arco/index.php) (Architecture of Knowledge)** portal regarding the [Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio). Instead of processing a pre-written description, we took the data provided by **[ChatGPT](https://chatgpt.com/)** to resolve these gaps and asked the model to **generate** corresponding formal [RDF triples](https://it.wikipedia.org/wiki/Resource_Description_Framework).
 
-To find the most accurate and compliant data layout for ArCo's standards, we tested the model using three different prompting strategies: **Zero-Shot**, **Few-Shot**, and **Chain-of-Thought (CoT)**. 
+To find the most accurate and compliant data layout for [ArCo](https://dati.beniculturali.it/arco/index.php)'s standards, we tested the model using three different prompting strategies: **Zero-Shot**, **Few-Shot**, and **Chain-of-Thought (CoT)**. 
 
-The content that follows presents the **RDF triples** produced to complete the missing elements identified during the previous LLMs investigation.
+The content that follows presents the **[RDF triples](https://it.wikipedia.org/wiki/Resource_Description_Framework)** produced to complete the missing elements identified during the previous [LLMs](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) investigation.
 
 ## 1. RDF Triple for description 📝
 
-Using a **zero-shot** prompting technique, we asked [ChatGPT](https://chatgpt.com/) to create a RDF Triple:
+Using a **zero-shot** prompting technique, we asked [ChatGPT](https://chatgpt.com/) to create a [RDF Triple](https://it.wikipedia.org/wiki/Resource_Description_Framework):
  <img width="802" height="1248" alt="image" src="https://github.com/user-attachments/assets/ef8c6e62-43a8-43a9-8ede-0b0e9cd6097b" />
 
-We gave [ChatGPT](https://chatgpt.com/) the following information to generate the RDF triple:
+We gave [ChatGPT](https://chatgpt.com/) the following information to generate the [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework):
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -45,10 +45,10 @@ Particularly notable within the basilica is the monumental meridian line traced 
 ```
 
 ## 2. RDF Triple for wikidata link 🔗
-Through a **zero-shot** prompt, [ChatGPT](https://chatgpt.com/) generated the RDF triples to connect the Basilica with its relative wikidata link:
+Through a **zero-shot** prompt, [ChatGPT](https://chatgpt.com/) generated the [RDF triples](https://it.wikipedia.org/wiki/Resource_Description_Framework) to connect the Basilica with its relative wikidata link:
 <img width="1160" height="384" alt="image" src="https://github.com/user-attachments/assets/a9022cd1-620e-42ad-93ae-7ad3be2141e0" />
 
-We gave [ChatGPT](https://chatgpt.com/) the following information to generate the RDF triple:
+We gave [ChatGPT](https://chatgpt.com/) the following information to generate the [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework):
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -66,12 +66,12 @@ We gave [ChatGPT](https://chatgpt.com/) the following information to generate th
 ```
 ## 3. RDF Triples for Geographical Coordinates 📍
 
-We prompted [ChatGPT](https://chatgpt.com/) to generate an RDF triple for the latitude using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
+We prompted [ChatGPT](https://chatgpt.com/) to generate an [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework) for the [latitude](https://it.wikipedia.org/wiki/Latitudine) using a **few-shot prompting approach**, providing a reference example to define the expected structure and format.
 
 #### Latitude generation
 <img width="365" height="310" alt="image" src="https://github.com/user-attachments/assets/2f36bb30-12be-4e3a-bbcc-446a6c13ca18" />
 
-We leveraged [ChatGPT](https://chatgpt.com/) to transform the following details into an RDF triple:
+We leveraged [ChatGPT](https://chatgpt.com/) to transform the following details into an [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework):
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -88,11 +88,11 @@ We leveraged [ChatGPT](https://chatgpt.com/) to transform the following details 
 
 #### Longitude generation
 
-Next, we asked [Chat GPT](https://chatgpt.com/) to apply the same approach to generate the longitude value (11.343126° E), changing only the predicate to `geo:long`.
+Next, we asked [Chat GPT](https://chatgpt.com/) to apply the same approach to generate the [longitude](https://it.wikipedia.org/wiki/Longitudine) value (11.343126° E), changing only the predicate to `geo:long`.
 
 <img width="372" height="83" alt="image" src="https://github.com/user-attachments/assets/48755750-30a9-4f27-97e5-56a83e80ddde" />
 
-The RDF triple was generated via [ChatGPT](https://chatgpt.com/) using the following input data:
+The [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework) was generated via [ChatGPT](https://chatgpt.com/) using the following input data:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -109,7 +109,7 @@ The RDF triple was generated via [ChatGPT](https://chatgpt.com/) using the follo
 
 #### Merging latitude and longitude
 
-We then requested the integration of both values into a single RDF description. This was achieved by combining multiple predicates under the same subject using Turtle shorthand syntax.
+We then requested the integration of both values into a single RDF description. This was achieved by combining multiple predicates under the same subject using [Turtle](https://it.wikipedia.org/wiki/Turtle_(formato)) shorthand syntax.
 
 <img width="403" height="58" alt="image" src="https://github.com/user-attachments/assets/921bc009-77c0-4db5-bab8-79db7324d2d1" />
 
@@ -124,7 +124,7 @@ We then requested the integration of both values into a single RDF description. 
 ```
 ### Final ArCo classification step
 
-Finally, we introduced the [ArCo](https://dati.beniculturali.it/arco/index.php) namespace prefix and manually added an explicit type declaration (`a arco:CulturalInstituteOrSite`) to semantically classify the resource within the [ArCo](https://dati.beniculturali.it/arco/index.php) ontology.
+Finally, we introduced the [ArCo](https://dati.beniculturali.it/arco/index.php) namespace prefix and manually added an explicit type declaration (`a arco:CulturalInstituteOrSite`) to semantically classify the resource within the [ArCo ontology](https://dati.cultura.gov.it/lode/extract?url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/core/core.owl).
 
 This step enriches the RDF description by defining not only the coordinates but also the ontological nature of the entity.
 
@@ -141,7 +141,7 @@ This step enriches the RDF description by defining not only the coordinates but 
 ```
 ## 4. RDF for official image 📷
 
-The [ArCo](https://dati.beniculturali.it/arco/index.php) ontology employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentative`, whereas for non-official images, it relies on `foaf:depiction`.
+The [ArCo ontology](https://dati.cultura.gov.it/lode/extract?url=https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/core/core.owl) employs different properties to reference images depending on their status. For official images, it uses `arco:hasRepresentative`, whereas for non-official images, it relies on `foaf:depiction`.
 
 Based on our previous research, there is currently no designated official image for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio). Furthermore, when tasked with finding one, [Gemini](https://gemini.google.com/app?hl=it) and [ChatGPT](https://chatgpt.com/) provided completely different images, each identifying their respective choice as the most representative. 
 
@@ -150,7 +150,7 @@ Based on our previous research, there is currently no designated official image 
 <img width="843" height="135" alt="depiction" src="https://github.com/user-attachments/assets/22b3988f-8d8d-4101-b83b-3a05ba40f077" />
 
 
-Below the specifications used to ask [Chat GPT](https://chatgpt.com/) to provide us the RDF triple:
+Below the specifications used to ask [Chat GPT](https://chatgpt.com/) to provide us the [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework):
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
@@ -174,7 +174,7 @@ Using a **zero-shot** prompting technique, we asked [ChatGPT](https://chatgpt.co
 
 <img width="631" height="337" alt="image" src="https://github.com/user-attachments/assets/b547c625-be0f-4ccf-96d1-53ae4bae5f3b" />
 
-The RDF triple was generated via [ChatGPT](https://chatgpt.com/) using the following input data:
+The [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework) was generated via [ChatGPT](https://chatgpt.com/) using the following input data:
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
