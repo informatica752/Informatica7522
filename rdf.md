@@ -312,4 +312,4 @@ We gave ChatGPT the following information to generate the RDF triple:
 ```
 
 
-### 🏠 [Torna alla Homepage](index.html)
+### 🏠 [Back to homepage](index.html)
