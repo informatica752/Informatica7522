@@ -242,7 +242,7 @@ In order to add the missing information about contact details to the [ArCo Knowl
 
 <img width="661" height="507" alt="image" src="https://github.com/user-attachments/assets/d0a6420c-1831-42cd-87ef-0a3efa79bb6c" />
 
-We gave [ChatGPT](https://chatgpt.com/) the following information to generate the RDF triple:
+We gave [ChatGPT](https://chatgpt.com/) the following information to generate the [RDF triple](https://it.wikipedia.org/wiki/Resource_Description_Framework):
 
 | Subject | Predicate | Object |
 | :--- | :--- | :--- |
