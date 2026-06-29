@@ -6,28 +6,28 @@ title: ⚙️ Methodology
 **To systematically address the lack of data for San Petronio on ArCo, our group executed the following operational phases step by step:** 
 
 ### 🌐 1. Choosing the Subject & Initial Analysis
-Our project focuses on the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** in Bologna, an incredible historical and architectural masterpiece. Our main goal was to check how well this famous monument is preserved in digital archives, see what information was already available online, and find a way to enrich its digital records.
+Our project focuses on the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** in [Bologna](https://it.wikipedia.org/wiki/Bologna), an incredible historical and architectural masterpiece. Our main goal was to check how well this famous monument is preserved in digital archives, see what information was already available online, and find a way to enrich its digital records.
 
 ### 🔍 2. Checking ArCo’s Database
-To see how San Petronio is represented in Italy's official cultural heritage data, we did a thorough check by querying the official **[ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)**. This allowed us to explore exactly what information, details, and connections were already linked to the Basilica inside the national knowledge graph.
+To see how [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) is represented in Italy's official cultural heritage data, we did a thorough check by querying the official **[ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)**. This allowed us to explore exactly what information, details, and connections were already linked to the Basilica inside the national [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph).
 
 ### 📊 3. Comparing Landmarks & Finding Data Gaps
-To get a clear picture of what was missing, we compared San Petronio's data with other major Italian churches. Since three of our team members are from Tuscany, we used the **[Basilica of San Francesco in Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))** as our main comparison point. While San Francesco had a detailed network of connected data, San Petronio turned out to be almost completely empty, showing a huge difference in data quantity.
+To get a clear picture of what was missing, we compared [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)'s data with other major Italian churches. Since three of our team members are from [Tuscany](https://it.wikipedia.org/wiki/Toscana), we used the **[Basilica of San Francesco in Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo))** as our main comparison point. While [San Francesco](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco) had a detailed network of connected data, [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) turned out to be almost completely empty, showing a huge difference in data quantity.
 
 ### 🕵️ 4. Confirming the Gaps with SPARQL
-We didn't just stop at our first impression; we proved it technically. By writing and running targeted **SPARQL queries**, we got concrete, machine-readable proof that vital pieces of information—like historical details, timeline updates, and specific architectural connections for San Petronio—were completely missing from ArCo.
+We didn't just stop at our first impression; we proved it technically. By writing and running targeted **[SPARQL queries](https://en.wikipedia.org/wiki/SPARQL)**, we got concrete, machine-readable proof that vital pieces of information—like historical details, timeline updates, and specific architectural connections for [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) were completely missing from [ArCo](https://dati.beniculturali.it/arco/index.php).
 
 ### 💡 5. Using LLMs to Find Missing Data
-To fill these data gaps, we brought Generative AI into our workflow. We experimented with different prompting techniques (**Zero-Shot, Few-Shot, and Chain-of-Thought**) using **[ChatGPT](https://it.wikipedia.org/wiki/ChatGPT) and [Gemini AI](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico))**. This helped us guide the AI assistants to extract accurate, high-quality historical facts about the Basilica.
+To fill these data gaps, we brought [Generative AI](https://it.wikipedia.org/wiki/Intelligenza_artificiale_generativa) into our workflow. We experimented with different prompting techniques (**Zero-Shot, Few-Shot, and Chain-of-Thought**) using **[ChatGPT](https://it.wikipedia.org/wiki/ChatGPT) and [Gemini AI](https://it.wikipedia.org/wiki/Gemini_(modello_linguistico))**. This helped us guide the AI assistants to extract accurate, high-quality historical facts about the Basilica.
 
 ### ⚖️ 6. Fact-Checking & Quality Control
-Since AI models can sometimes make things up, we put the results from ChatGPT and Gemini through a strict cross-validation process. We double-checked all the historical facts against trusted academic sources, filtered out any mistakes or "hallucinations," and chose the best answers.
+Since AI models can sometimes make things up, we put the results from [ChatGPT](https://chatgpt.com/) and [Gemini](https://gemini.google.com/app?hl=it) through a strict cross-validation process. We double-checked all the historical facts against trusted academic sources, filtered out any mistakes or "[hallucinations](https://it.wikipedia.org/wiki/Allucinazione_(intelligenza_artificiale))," and chose the best answers.
 
 ### 📚 7. Writing the Code & Creating RDF Triples
-Next, we translated our newly verified historical text into machine-readable data for the Semantic Web. We mapped this information onto ArCo’s official structure to generate valid **[RDF triples](https://en.wikipedia.org/wiki/Semantic_triple#See_also)** and exported them into a **[Turtle (.ttl)](https://it.wikipedia.org/wiki/Turtle_(formato))** format, creating a real, ready-to-use extension for the knowledge graph.
+Next, we translated our newly verified historical text into machine-readable data for the [Semantic Web](https://it.wikipedia.org/wiki/Web_semantico). We mapped this information onto [ArCo](https://dati.beniculturali.it/arco/index.php)’s official structure to generate valid **[RDF triples](https://en.wikipedia.org/wiki/Semantic_triple#See_also)** and exported them into a **[Turtle (.ttl)](https://it.wikipedia.org/wiki/Turtle_(formato))** format, creating a real, ready-to-use extension for the [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph).
 
 ### 🖥️ 8. Launching the Web Platform on GitHub
-To share our work with everyone, we built this **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** website. This platform hosts our entire step-by-step process, displays our comparison results, and serves as an open-science project to show how AI can help researchers enrich and update cultural heritage databases.
+To share our work with everyone, we built this **[GitHub Pages web platform](https://en.wikipedia.org/wiki/GitHub)** website. This platform hosts our entire step-by-step process, displays our comparison results, and serves as an open-science project to show how [AI](https://it.wikipedia.org/wiki/Intelligenza_artificiale) can help researchers enrich and update cultural heritage databases.
 
 ---
 ## **What Role Do These Tools Play?**
@@ -37,14 +37,14 @@ To share our work with everyone, we built this **[GitHub Pages web platform](htt
 To establish a baseline for our project, we interacted extensively with national cultural heritage platforms:
 
 * **What is ArCo?** [ArCo](https://dati.beniculturali.it/arco/index.php) (Architecture of Knowledge) is the official [Knowledge Graph](https://it.wikipedia.org/wiki/Knowledge_graph) of the [Italian Ministry of Culture](https://it.wikipedia.org/wiki/Ministero_della_cultura). It exposes millions of cultural assets as [Linked Open Data (LOD)](https://en.wikipedia.org/wiki/Linked_data), standardizing information about monuments, historical events, and artistic creators across Italy.
-* **The SPARQL Endpoint:** A SPARQL Endpoint is a dedicated web interface that allows human researchers and automated software agents to query a Knowledge Graph using the SPARQL query language. By querying the ArCo endpoint, we empirically verified the massive data asymmetry: San Francesco returned a dense web of interconnected entities, while San Petronio returned only a basic registry stub.
+* **The SPARQL Endpoint:** A [SPARQL Endpoint](https://dati.cultura.gov.it/sparql) is a dedicated web interface that allows human researchers and automated software agents to query a Knowledge Graph using the SPARQL query language. By querying the [ArCo endpoint](https://dati.cultura.gov.it/sparql), we empirically verified the massive data asymmetry: [San Francesco](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo)) returned a dense web of interconnected entities, while [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) returned only a basic registry stub.
 
 ---
 
 ## 🔀 Data Formalization: RDF Triples
 As highlighted in our course materials, the fundamental building block of the [Semantic Web](https://it.wikipedia.org/wiki/Web_semantico) is the **[RDF (Resource Description Framework)](https://it.wikipedia.org/wiki/Resource_Description_Framework)** standard. 
 
-Instead of organizing data in traditional relational tables or isolated text blocks, RDF models knowledge as a directed graph. Every piece of information is broken down into a formal **RDF Triple**:
+Instead of organizing data in traditional relational tables or isolated text blocks, RDF models knowledge as a directed graph. Every piece of information is broken down into a formal **[RDF Triple](https://it.wikipedia.org/wiki/Resource_Description_Framework)**:
 
 **Subject** ➔ **Predicate** ➔ **Object**
 * **Subject:** The resource being described (represented by a unique URI, e.g., `ex:Basilica_San_Petronio`).
@@ -58,21 +58,21 @@ By adopting this structure, we shift from a "Web of Documents" (meant only for h
 
 ### What is an LLM?
 
-An **LLM (Large Language Model)** is a type of neural network trained to understand and generate human language. It can understand, process, and generate human language, making it capable of reading documents, answering questions, and translating text into computer code or structured data.
+An **[LLM (Large Language Model)](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni)** is a type of neural network trained to understand and generate human language. It can understand, process, and generate human language, making it capable of reading documents, answering questions, and translating text into computer code or structured data.
 
 ---
 
 ### Our AI Workflow
 
-To speed up our project and avoid writing thousands of lines of code manually, we included LLMs in our workflow. We used Artificial Intelligence for two main purposes:
+To speed up our project and avoid writing thousands of lines of code manually, we included LLMs in our workflow. We used [Artificial Intelligence](https://it.wikipedia.org/wiki/Intelligenza_artificiale) for two main purposes:
 
-1. **Finding Missing Information:** The AI helped us scan and analyze historical books, architectural surveys, and documents to quickly find the data that was missing for San Petronio.
-2. **Creating Semantic Web Data:** Once the information was found, the AI acted as an intelligent translator. It extracted the key entities from the historical texts and automatically converted them into RDF triples.
+1. **Finding Missing Information:** The AI helped us scan and analyze historical books, architectural surveys, and documents to quickly find the data that was missing for [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio).
+2. **Creating Semantic Web Data:** Once the information was found, the [AI](https://it.wikipedia.org/wiki/Intelligenza_artificiale) acted as an intelligent translator. It extracted the key entities from the historical texts and automatically converted them into RDF triples.
 
-The LLM allowed us to bridge the gap between human narratives (stories and history) and machine-readable data (the Semantic Web) in a fraction of the time. A Large Language Model (LLM) is a type of neural network trained to understand and generate human language.
+The [LLM](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) allowed us to bridge the gap between human narratives (stories and history) and machine-readable data (the Semantic Web) in a fraction of the time. A [Large Language Model (LLM)](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni) is a type of neural network trained to understand and generate human language.
 
 ### Models Selected for this Research
-To guarantee high syntactical accuracy and lower hallucination rates, we benchmarked and deployed the following state-of-the-art models:
+To guarantee high syntactical accuracy and lower [hallucination](https://it.wikipedia.org/wiki/Allucinazione_(intelligenza_artificiale)) rates, we benchmarked and deployed the following state-of-the-art models:
 * **[GPT-4o (OpenAI)](https://chat.openai.com/):** Utilized for its exceptional compliance with complex structural syntax constraints.
 * **[Gemini (Google)](https://gemini.google.com/?hl=it):** Utilized for its advanced reasoning capabilities and code-generation precision.
 
@@ -83,8 +83,8 @@ The models were explicitly restricted through system prompts to only map relatio
 ## 📦 Infrastructure & Deployment: GitHub & GitHub Pages
 The entire development, tracking, and publishing lifecycle of this project is hosted on **[GitHub](https://github.com/)**.
 
-* **GitHub as a Version Control System:** It allows our team to collaborate simultaneously on the text, prompt configurations, and raw `.ttl` (Turtle) data files, ensuring a transparent history of every change made to the Knowledge Graph.
-* **GitHub Pages Integration:** By using GitHub Pages combined with the native Jekyll framework, we converted our project's underlying Markdown documentation into this live, navigable, and responsive web portal under the **[Cayman Theme](https://github.com/pages-themes/cayman)** framework.
+* **GitHub as a Version Control System:** It allows our team to collaborate simultaneously on the text, prompt configurations, and raw `.ttl` (Turtle) data files, ensuring a transparent history of every change made to the [Knowledge Graph](https://en.wikipedia.org/wiki/Knowledge_graph).
+* **GitHub Pages Integration:** By using GitHub Pages combined with the native [Jekyll framework](https://en.wikipedia.org/wiki/Jekyll_(software)), we converted our project's underlying Markdown documentation into this live, navigable, and responsive web portal under the **[Cayman Theme](https://github.com/pages-themes/cayman)** framework.
 
 ---
 
