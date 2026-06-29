@@ -68,7 +68,7 @@ Let's break this query down into simple pieces:
 By doing this research we found the correct [IRI of Basilica di San Petronio](http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio) as the first result: 
 https://dati.beniculturali.it/lodview/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio.html 
 
-* **Results:** Only a limited amount of information about the Basilica is available on ArCo:
+* **Results:** Only a limited amount of information about the Basilica is available on [ArCo](https://dati.cultura.gov.it/sparql):
   * Name
   * Type
   * Location
@@ -132,11 +132,11 @@ This query shows all the details and categories used for every basilica in the d
 
 ## ⚖️ Step 3: Comparing with Basilica di San Francesco (Arezzo)
 
-To prove that San Petronio's record was abnormally sparse, we decided to run a comparative check against other major Italian landmarks. 
+To prove that [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)'s record was abnormally sparse, we decided to run a comparative check against other major Italian landmarks. 
 
-Specifically, we selected the **Basilica of San Francesco in Arezzo** as our quality benchmark, which is famous for its rich historical and artistic heritage.
+Specifically, we selected the **[Basilica di San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco)** as our quality benchmark, which is famous for its rich historical and artistic heritage.
 
-To retrieve the official data record for the Basilica of San Francesco, we executed the following SPARQL query:
+To retrieve the official data record for the [Basilica di San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco), we executed the following SPARQL query:
 
 ```sparql
 PREFIX cis: <http://dati.beniculturali.it/cis/>
@@ -165,7 +165,7 @@ LIMIT 100
   * **Second Condition:** It searches for the word "arezzo".
 * **Why we do this:** If we only searched for "San Francesco", the database would return hundreds of unrelated churches across Italy. By adding the second condition for "arezzo", we instantly filter out unrelated results.
 
-By comparison, the documentation was significantly more detailed than the data available for the Basilica of San Petronio. 
+By comparison, the documentation was significantly more detailed than the data available for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio). 
 
 You can find the [IRI of Basilica di San Francesco (Arezzo)](http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/20560): 
 https://dati.beniculturali.it/lodview/mibact/luoghi/resource/CulturalInstituteOrSite/20560.html
@@ -183,7 +183,7 @@ By comparing the results of the queries above with the first query, we outlined 
 
 ## Step 5: Queries to verify these gaps in ArCo
 
-In order to ensure the absence of such information on ArCo, we ran several queries using the IRI of Basilica di San Petronio: `http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio`
+In order to ensure the absence of such information on [ArCo](https://dati.cultura.gov.it/sparql), we ran several queries using the IRI of [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio): `http://dati.beniculturali.it/iccd/schede/resource/CulturalInstituteOrSite/S001851_Basilica_di_San_Petronio`
 
 ### Query 1: Verifying the absence of a description 📝
 
@@ -217,7 +217,7 @@ LIMIT 10
 
 **Analyzing the query:**
 
-* **Subject Target:** The query isolates the unique URI assigned by ArCo to the Basilica as the main subject of our search.
+* **Subject Target:** The query isolates the unique URI assigned by [ArCo](https://dati.cultura.gov.it/sparql) to the Basilica as the main subject of our search.
 * **Multiple Vocabulary Scanning:** To prevent false negatives, the query scans different vocabularies simultaneously:
   * **Direct Attachment** (`l0:description`): checks if a text block is directly attached to the main monument resource using the national OntoPiA base vocabulary.
   * **Indirect Modeling** (`arco:hasDescription`): analyzes the graph to see if the text is encapsulated within a complex, intermediate description resource.
@@ -228,7 +228,7 @@ It confirms the absence of any description.
 
 ### Query 2: Verifying the absence of the Wikidata link 🔗
 
-We executed a targeted SPARQL query to investigate whether ArCo's graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio):
+We executed a targeted SPARQL query to investigate whether [ArCo](https://dati.cultura.gov.it/sparql)'s graph contains an explicit Linked Data connection to the corresponding Wikidata profile for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio):
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -243,16 +243,16 @@ WHERE {
 
 **Analyzing the query:**
 
-* **Subject Target:** The query isolates the unique URI assigned by ArCo to the Basilica as the main subject of our search.
+* **Subject Target:** The query isolates the unique URI assigned by [ArCo](https://dati.cultura.gov.it/sparql) to the Basilica as the main subject of our search.
 * **String-Pattern Matching:** Instead of scanning all properties, the `FILTER` block utilizes the `STRSTARTS` function to check if any object points to a Wikidata URL.
 
 **Results:** ❌ Empty Dataset
 
-Despite being one of Italy's major heritage sites, the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) exists as an isolated node within ArCo, lacking semantic alignment with the global Wikidata knowledge base.
+Despite being one of Italy's major heritage sites, the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) exists as an isolated node within [ArCo](https://dati.cultura.gov.it/sparql), lacking semantic alignment with the global Wikidata knowledge base.
 
 ### Query 3: Verifying the absence of geographical coordinates 📍
 
-We executed a query to verify whether ArCo explicitly integrates geospatial positioning data within the semantic profile of the Basilica di San Petronio:
+We executed a query to verify whether [ArCo](https://dati.cultura.gov.it/sparql) explicitly integrates geospatial positioning data within the semantic profile of the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio):
 
 ```sparql
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
@@ -274,11 +274,11 @@ LIMIT 5
 
 **Results:** ❌ Empty Table
 
-This confirms that ArCo lacks both direct coordinate triples and formal geometry instances for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio).
+This confirms that [ArCo](https://dati.cultura.gov.it/sparql) lacks both direct coordinate triples and formal geometry instances for the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio).
 
 ### Query 4: Verifying the absence of an official depiction 📷
 
-We designed an exploratory SPARQL query to detect whether ArCo encompasses any official visual assets or digital media linked to the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) in Bologna:
+We designed an exploratory SPARQL query to detect whether [ArCo](https://dati.cultura.gov.it/sparql) encompasses any official visual assets or digital media linked to the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) in Bologna:
 
 ```sparql
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
@@ -309,7 +309,7 @@ LIMIT 10
 To maximize the efficiency of this check, the query implements a `UNION` pattern, cross-referencing three distinct semantic pathways where an image asset might be nested:
 
 * **`foaf:depiction`:** the cross-domain standard predicate used to link a conceptual resource to its visual representation.
-* **`arco:hasRepresentative`:** from the ArCo ontology; usually points to a representative image of the cultural entity.
+* **`arco:hasRepresentative`:** from the [ArCo](https://dati.cultura.gov.it/sparql) ontology; usually points to a representative image of the cultural entity.
 * **`arco:hasDigitalRepresentation`:** a broader ontological property designed to connect physical monuments with their web-accessible digital twins or files.
 
 **Results:** ❌ Empty Table
@@ -337,7 +337,7 @@ LIMIT 10
 
 **Analyzing the query:**
 
-* **Property Selection** (`potapit:hasTicket`): This property comes from the `POT-AP-IT` (Prices, Offers, Tickets - Italian Application Profile) vocabulary, integrated into ArCo to model entry fees and ticket information.
+* **Property Selection** (`potapit:hasTicket`): This property comes from the `POT-AP-IT` (Prices, Offers, Tickets - Italian Application Profile) vocabulary, integrated into [ArCo](https://dati.cultura.gov.it/sparql) to model entry fees and ticket information.
 * **`OPTIONAL` Blocks:** Instead of a rigid lookup, the query uses `OPTIONAL` patterns to retrieve any additional human-readable labels or specific price structures.
 
 **Results:** ❌ Empty Table
@@ -365,7 +365,7 @@ LIMIT 10
 
 **Analyzing the query:**
 
-* **URI Specificity:** By using the unique, hardcoded URI of Basilica di San Petronio, we ensure that the endpoint evaluates only the explicit graph node belonging to the main church building.
+* **URI Specificity:** By using the unique, hardcoded URI of [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio), we ensure that the endpoint evaluates only the explicit graph node belonging to the main church building.
 * **Property Selection** (`smapit:hasOnlineContactPoint`): This relation looks for an outward link from the physical church node to an abstract digital container defined by the `SM-AP-IT` (Social Media and Services - Italian Application Profile) vocabulary.
 * **`OPTIONAL` Parameters:** Runs parallel, independent checks to capture categorization labels, email addresses, phone lines, and websites.
 
