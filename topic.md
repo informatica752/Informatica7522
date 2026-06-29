@@ -16,9 +16,9 @@ Begun in [1390](https://it.wikipedia.org/wiki/1390) under the direction of [Anto
 
 This project came about through a mix of daily life, academic curiosity, and an unexpected discovery. 
 
-As students in Bologna, the **Basilica di San Petronio** is a massive presence in our daily lives. When we first started our research, we wanted to see how this landmark was represented in digital databases, so we began comparing its data with other famous Italian basilicas in general. 
+As students in Bologna, the **[Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** is a massive presence in our daily lives. When we first started our research, we wanted to see how this landmark was represented in digital databases, so we began comparing its data with other famous [Italian basilicas](https://it.wikipedia.org/wiki/Basiliche_in_Italia) in general. 
 
-While looking at the results, we noticed some gaps. That is when we had an idea based on our team's background: although we all study here in Emilia-Romagna, three of us are originally from **Tuscany**. We thought it would be interesting to compare San Petronio directly with a major landmark from our home region to see how they measured up. We chose the **Basilica di San Francesco** as our benchmark.
+While looking at the results, we noticed some gaps. That is when we had an idea based on our team's background: although we all study here in [Emilia-Romagna](https://it.wikipedia.org/wiki/Emilia-Romagna), three of us are originally from **[Tuscany](https://it.wikipedia.org/wiki/Toscana)**. We thought it would be interesting to compare [Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)directly with a major landmark from our home region to see how they measured up. We chose the **Basilica di San Francesco** as our benchmark.
 
 We naturally assumed that a monument of San Petronio’s immense physical and historical importance would have the same level of rich, detailed data as the prominent Tuscan churches. However, we found a completely different story.
 
