@@ -29,7 +29,7 @@ When we ran our queries on **ArCo**, we were genuinely surprised by the striking
 * The **[San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco) Benchmark:** The [Basilica di San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco) is exceptionally well-mapped. It features a dense network of connected data such as its architectural history, geographical coordinates and access information.
 * The **[San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) "Empty Shell":** Despite its historical weight, [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) exists on [ArCo](https://dati.cultura.gov.it/sparql) almost entirely as a basic registry entry. It contains standard identification info but completely lacks historical data, coordinates, images, or semantic connections.
 
-Seeing this massive data gap is what motivated us to take action. This project is our attempt to use AI and Semantic Web tools to bridge this digital divide and finally give the Basilica di San Petronio the structured digital depth it deserves.
+Seeing this massive data gap is what motivated us to take action. This project is our attempt to use [AI](https://it.wikipedia.org/wiki/Intelligenza_artificiale) and [Semantic Web](https://it.wikipedia.org/wiki/Web_semantico) tools to bridge this digital divide and finally give the [Basilica of San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) the structured digital depth it deserves.
 
 ---
 
@@ -39,10 +39,10 @@ To visually contextualize the scale of this data disparity, the table below high
 
 | Basilica Entity | Geographic Context | Presence in ArCo | Graph Density & Detail Level |
 | :--- | :--- | :---: | :---: |
-| **San Francesco** | Tuscany | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) |
-| **San Petronio** | Emilia-Romagna | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) |
+| **[San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco)** | [Tuscany](https://it.wikipedia.org/wiki/Toscana) | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) |
+| **[San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** | [Emilia-Romagna](https://it.wikipedia.org/wiki/Emilia-Romagna) | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) |
 
-Using the data structure of the Basilica di San Francesco as our model, we extract and organize the historical and architectural information of San Petronio to build its own independent Knowledge Graph.
+Using the data structure of the [Basilica of San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco) as our model, we extract and organize the historical and architectural information of [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) to build its own independent Knowledge Graph.
 
 ---
 
