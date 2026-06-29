@@ -372,5 +372,5 @@ LIMIT 10
 **Results:** ❌ Empty Dataset
 
 
-### 🏠 [Torna alla Homepage](index.html)
+### 🏠 [Back to homepage](index.html)
 
