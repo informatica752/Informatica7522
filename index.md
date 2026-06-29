@@ -19,11 +19,11 @@ Ultimately, this work investigates how [AI-driven assistants](https://it.wikiped
 
 ## Key Objectives
 
-* 🔍 **Analyze** the current representation of the Basilica di San Petronio within the ArCo dataset.
+* 🔍 **Analyze** the current representation of the [Basilica di San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) within the [ArCo](https://dati.beniculturali.it/arco/index.php) dataset.
 * 📍 **Identify Gaps** in the existing data, such as missing geographical coordinates, description, images, and contacts.
-* 🧠 **Experiment** with various LLM prompting techniques (including Zero-Shot, Few-Shot, and Chain-of-Thought) for accurate RDF generation.
-* 🛠️ **Enrich the Dataset** by producing valid RDF triples using AI-based assistants compliant with ArCo's schema.
-* 📊 **Evaluate** the effectiveness and impact of incorporating LLMs into knowledge engineering workflows for cultural heritage.
+* 🧠 **Experiment** with various [LLM](https://en.wikipedia.org/wiki/Large_language_model) prompting techniques (including Zero-Shot, Few-Shot, and Chain-of-Thought) for accurate RDF generation.
+* 🛠️ **Enrich the Dataset** by producing valid [RDF](https://it.wikipedia.org/wiki/Resource_Description_Framework) triples using [AI-based assistants]((https://it.wikipedia.org/wiki/Assistente_virtuale)) compliant with ArCo's schema.
+* 📊 **Evaluate** the effectiveness and impact of incorporating [LLMs](https://en.wikipedia.org/wiki/Large_language_model) into knowledge engineering workflows for cultural heritage.
 
 ## Tools Used
 
@@ -40,5 +40,5 @@ This project was collaboratively developed by:
 * 👩🏻 **Giulia Nestola**
 * 👩🏻 **Martina Fierli**
 
-Students of the Master’s Degree in [Language, Society and Communication](https://corsi.unibo.it/2cycle/LanguageSocietyCommunication) at the University of Bologna.
+Students of the Master’s Degree in [Language, Society and Communication](https://corsi.unibo.it/2cycle/LanguageSocietyCommunication) at the [University of Bologna](https://it.wikipedia.org/wiki/Universit%C3%A0_di_Bologna).
 
