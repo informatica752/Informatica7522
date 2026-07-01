@@ -42,7 +42,7 @@ To visually contextualize the scale of this data disparity, the table below high
 | **[San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco)** | [Tuscany](https://it.wikipedia.org/wiki/Toscana) | ✅ Yes | 🔴 High (Rich metadata, interconnected sub-entities) |
 | **[San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio)** | [Emilia-Romagna](https://it.wikipedia.org/wiki/Emilia-Romagna) | ✅ Yes | ⚪ Extremely Low (Basic stub/registry data only) |
 
-Using the data structure of the [Basilica of San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco) as our model, we extract and organize the historical and architectural information of [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) to build its own independent [Knowledge Graph] (https://en.wikipedia.org/wiki/Knowledge_graph).
+Using the data structure of the [Basilica of San Francesco](https://cultura.gov.it/luogo/basilica-di-san-francesco) as our model, we extract and organize the historical and architectural information of [San Petronio](https://it.wikipedia.org/wiki/Basilica_di_San_Petronio) to build its own independent [Knowledge Graph](https://en.wikipedia.org/wiki/Knowledge_graph).
 
 ---
 
