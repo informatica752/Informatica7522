@@ -23,7 +23,7 @@ During our work, we faced and resolved three main challenges related to data cre
 
 •	**Solution:** We manually reviewed every query proposed by the [AI](https://it.wikipedia.org/wiki/A.I._-_Intelligenza_artificiale). We cross-checked the properties with the official [ArCo documentation](https://dati.beniculturali.it/arco/index.php) and compared them with the working queries from our benchmark site, the [Basilica of Arezzo](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo)). This verification step ensured that our queries were accurate and functional.
 
-**3️⃣ Setting up and Linking the Website on [GitHub](https://github.com) Pages**
+**3️⃣ Setting up and Linking the Website on [GitHub Pages](https://github.com)**
 
 •	**Challenge:** As absolute beginners in web development, creating the project website was a central obstacle. We found it very difficult at first to understand how to create a new [GitHub repository](https://github.com) from scratch, adapt existing Jekyll templates, and manually create all the navigation hyperlinks to connect the pages together.
 
